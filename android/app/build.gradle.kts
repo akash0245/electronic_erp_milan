@@ -7,8 +7,8 @@ plugins {
 
 android {
     namespace = "com.electric.components.milan_savaliya"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 35
+    ndkVersion = "27.2.12479018"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
