@@ -1,0 +1,138 @@
+{
+  "category": "Transistors",
+  "products": [
+    {
+      "name": "Bipolar Transistors",
+      "price": 4.0,
+      "rating": 2.5,
+      "description": "Reliable bipolar transistors ideal for amplification and switching.",
+      "image": "assets/transistors/bipolar_transistors.png",
+      "specs": {
+        "type": "Bipolar Junction",
+        "application": "Amplification, Switching",
+        "package": "SOT-23",
+        "voltageRating": "40V",
+        "currentRating": "600mA"
+      },
+      "productDetail": [
+        "Bipolar Transistors offers superior performance.",
+        "Ideal for use in Amplification, Switching circuits.",
+        "Compact package and high efficiency."
+      ]
+    },
+    {
+      "name": "Darlington Transistors",
+      "price": 14.0,
+      "rating": 3.2,
+      "description": "High gain Darlington transistors for efficient power switching.",
+      "image": "assets/transistors/darlington_transistors.png",
+      "specs": {
+        "type": "Darlington",
+        "application": "Power Switching",
+        "package": "TO-220",
+        "voltageRating": "100V",
+        "currentRating": "2A"
+      },
+      "productDetail": [
+        "Darlington Transistors offers superior performance.",
+        "Ideal for use in Power Switching circuits.",
+        "Compact package and high efficiency."
+      ]
+    },
+    {
+      "name": "Digital Transistors",
+      "price": 9.0,
+      "rating": 3.5,
+      "description": "Digital transistors with built-in bias resistors for logic-level control.",
+      "image": "assets/transistors/digital_transistors.png",
+      "specs": {
+        "type": "Digital",
+        "application": "Logic Circuits",
+        "package": "SOT-23",
+        "voltageRating": "50V",
+        "currentRating": "100mA"
+      },
+      "productDetail": [
+        "Digital Transistors offers superior performance.",
+        "Ideal for use in Logic Circuits circuits.",
+        "Compact package and high efficiency."
+      ]
+    },
+    {
+      "name": "IGBTs",
+      "price": 344.0,
+      "rating": 2.4,
+      "description": "Insulated-Gate Bipolar Transistors for high voltage and current applications.",
+      "image": "assets/transistors/igbts.png",
+      "specs": {
+        "type": "IGBT",
+        "application": "Inverters, Motor Drives",
+        "package": "TO-247",
+        "voltageRating": "600V",
+        "currentRating": "30A"
+      },
+      "productDetail": [
+        "IGBTs offers superior performance.",
+        "Ideal for use in Inverters, Motor Drives circuits.",
+        "Compact package and high efficiency."
+      ]
+    },
+    {
+      "name": "JFET",
+      "price": 11.0,
+      "rating": 3.2,
+      "description": "Junction Field-Effect Transistors with high input impedance.",
+      "image": "assets/transistors/jfet.png",
+      "specs": {
+        "type": "JFET",
+        "application": "Analog Switches, Amplifiers",
+        "package": "TO-92",
+        "voltageRating": "30V",
+        "currentRating": "50mA"
+      },
+      "productDetail": [
+        "JFET offers superior performance.",
+        "Ideal for use in Analog Switches, Amplifiers circuits.",
+        "Compact package and high efficiency."
+      ]
+    },
+    {
+      "name": "MOSFET",
+      "price": 5.0,
+      "rating": 4.3,
+      "description": "Efficient and fast-switching MOSFETs for power management.",
+      "image": "assets/transistors/mosfet.png",
+      "specs": {
+        "type": "MOSFET",
+        "application": "Power Supplies, Switching",
+        "package": "DPAK",
+        "voltageRating": "60V",
+        "currentRating": "10A"
+      },
+      "productDetail": [
+        "MOSFET offers superior performance.",
+        "Ideal for use in Power Supplies, Switching circuits.",
+        "Compact package and high efficiency."
+      ]
+    },
+    {
+      "name": "RF Transistors",
+      "price": 395.0,
+      "rating": 3.5,
+      "description": "High-frequency RF transistors for radio and communication circuits.",
+      "image": "assets/transistors/rf_transistors.png",
+      "specs": {
+        "type": "RF",
+        "application": "RF Amplifiers, Oscillators",
+        "package": "SOT-89",
+        "voltageRating": "25V",
+        "currentRating": "100mA"
+      },
+      "productDetail": [
+        "RF Transistors offers superior performance.",
+        "Ideal for use in RF Amplifiers, Oscillators circuits.",
+        "Compact package and high efficiency."
+      ]
+    }
+  ]
+}

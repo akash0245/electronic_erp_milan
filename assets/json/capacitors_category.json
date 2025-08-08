@@ -1,0 +1,195 @@
+{
+  "category": "Capacitors",
+  "products": [
+    {
+      "name": "Ceramic Capacitors",
+      "price": 2.0,
+      "rating": 1.5,
+      "image": "asset/capacitors/ceramic_capacitors",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Ceramic Capacitors are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Aluminium Electrolytic",
+      "price": 40.0,
+      "rating": 3.2,
+      "image": "asset/capacitors/aluminium_electrolytic",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Aluminium Electrolytic are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Super Capacitors",
+      "price": 89.0,
+      "rating": 3.5,
+      "image": "asset/capacitors/super_capacitors",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Super Capacitors are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Film Capacitors",
+      "price": 5.0,
+      "rating": 2.4,
+      "image": "asset/capacitors/film_capacitors",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Film Capacitors are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Mica Capacitors",
+      "price": 119.0,
+      "rating": 2.2,
+      "image": "asset/capacitors/mica_capacitors",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Mica Capacitors are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Noise Suppression",
+      "price": 56.0,
+      "rating": 2.3,
+      "image": "asset/capacitors/noise_suppression",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Noise Suppression are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Polymer Capacitors",
+      "price": 60.5,
+      "rating": 2.5,
+      "image": "asset/capacitors/polymer_capacitors",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Polymer Capacitors are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Silicon RF Capacitors",
+      "price": 6.0,
+      "rating": 4.4,
+      "image": "asset/capacitors/silicon_rf_capacitors",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Silicon RF Capacitors are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Tantalum Capacitors",
+      "price": 15.0,
+      "rating": 3.5,
+      "image": "asset/capacitors/tantalum_capacitors",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Tantalum Capacitors are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    },
+    {
+      "name": "Capacitors Kit",
+      "price": 947.0,
+      "rating": 3.3,
+      "image": "asset/capacitors/capacitors_kit",
+      "productDetail": [
+        "Compact and efficient energy storage",
+        "Widely used in analog and digital circuits",
+        "High reliability and low maintenance",
+        "Provides filtering, smoothing, and timing"
+      ],
+      "description": "Capacitors Kit are essential components used to store electrical energy temporarily in electronic circuits. These capacitors provide stability, reduce noise, and support filtering and energy buffering in various devices and systems.",
+      "specs": {
+        "type": "Electronic Capacitor",
+        "voltageRating": "16V - 100V",
+        "capacitanceRange": "10pF - 4700\u00b5F",
+        "temperatureStability": "\u00b110%"
+      }
+    }
+  ]
+}

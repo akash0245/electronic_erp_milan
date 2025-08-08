@@ -1,0 +1,175 @@
+{
+  "category": "Inductors",
+  "products": [
+    {
+      "name": "Air Core Inductors",
+      "price": 50.00,
+      "rating": 2.5,
+      "image": "asset/inductors/air_core_inductors",
+      "productDetail": [
+        "Non-magnetic core for high-frequency stability",
+        "Minimal core loss and interference",
+        "Excellent for RF circuits"
+      ],
+      "description": "Air Core Inductors are ideal for high-frequency applications where core losses must be minimized. They are lightweight and offer consistent inductance without saturation.",
+      "specs": {
+        "coreType": "Air",
+        "inductance": "0.1 µH - 10 µH",
+        "application": "RF, wireless, and filter circuits"
+      }
+    },
+    {
+      "name": "Charging Coils & Arrays",
+      "price": 26.00,
+      "rating": 2.2,
+      "image": "asset/inductors/charging_coils_and_arrays",
+      "productDetail": [
+        "Compact size with high current capability",
+        "Suitable for wireless charging modules",
+        "Low EMI characteristics"
+      ],
+      "description": "Charging coils are specialized inductors used in wireless charging and power transfer systems. They are optimized for efficient energy transfer at varying frequencies.",
+      "specs": {
+        "type": "Wireless Power Coil",
+        "currentRating": "1A - 5A",
+        "shielding": "Optional"
+      }
+    },
+    {
+      "name": "Coupled Inductors",
+      "price": 35.00,
+      "rating": 4.5,
+      "image": "asset/inductors/coupled_inductors",
+      "productDetail": [
+        "Used in power converters",
+        "Efficient magnetic coupling",
+        "Reduces component count in circuits"
+      ],
+      "description": "Coupled inductors provide mutual inductance between windings, used in power converters and voltage regulators to enhance performance and efficiency.",
+      "specs": {
+        "structure": "Dual Winding",
+        "couplingCoefficient": "0.95 typical",
+        "applications": "Buck/Boost converters"
+      }
+    },
+    {
+      "name": "Fixed Value Inductors",
+      "price": 7.00,
+      "rating": 4.4,
+      "image": "asset/inductors/fixed_value_inductors",
+      "productDetail": [
+        "Stable inductance value",
+        "Standardized size",
+        "Reliable in repetitive loads"
+      ],
+      "description": "Fixed Value Inductors are designed for general-purpose use in electronic circuits with a constant inductance requirement. They are cost-effective and durable.",
+      "specs": {
+        "inductance": "0.1 µH to 1000 µH",
+        "tolerance": "±10%",
+        "mounting": "SMD/Through-hole"
+      }
+    },
+    {
+      "name": "High Frequency Inductors",
+      "price": 3.00,
+      "rating": 4.2,
+      "image": "asset/inductors/high_frequency_inductors",
+      "productDetail": [
+        "Optimized for MHz frequency ranges",
+        "Low core losses and high Q-factor",
+        "Compact form factor"
+      ],
+      "description": "High Frequency Inductors are tailored for RF and high-speed signal applications, maintaining low loss and minimal distortion at high frequencies.",
+      "specs": {
+        "frequencyRange": "1 MHz - 100 MHz",
+        "coreMaterial": "Ferrite",
+        "QFactor": "High"
+      }
+    },
+    {
+      "name": "Multilayer Inductors",
+      "price": 5.00,
+      "rating": 4.3,
+      "image": "asset/inductors/multilayer_inductors",
+      "productDetail": [
+        "High inductance in small size",
+        "Stable performance under heat",
+        "Multilayer ceramic design"
+      ],
+      "description": "Multilayer Inductors offer high inductance density in a tiny footprint, making them suitable for compact circuits and surface mounting.",
+      "specs": {
+        "structure": "Multilayer ceramic",
+        "size": "0402, 0603, etc.",
+        "inductance": "Up to 1 mH"
+      }
+    },
+    {
+      "name": "Power Inductors",
+      "price": 395.00,
+      "rating": 3.5,
+      "image": "asset/inductors/power_inductors",
+      "productDetail": [
+        "High current capacity",
+        "Shielded or unshielded variants",
+        "Low DCR and thermal resistance"
+      ],
+      "description": "Power Inductors are built for switching power supplies, DC-DC converters, and voltage regulators. They provide high energy storage and current handling.",
+      "specs": {
+        "currentRating": "Up to 50 A",
+        "DCR": "Low",
+        "coreMaterial": "Ferrite/Iron powder"
+      }
+    },
+    {
+      "name": "RF Inductor",
+      "price": 42.00,
+      "rating": 2.3,
+      "image": "asset/inductors/rf_inductor",
+      "productDetail": [
+        "Tuned for radio frequencies",
+        "Minimal signal attenuation",
+        "Used in filters and oscillators"
+      ],
+      "description": "RF Inductors are precision components used in RF circuits for impedance matching, signal filtering, and energy storage. Designed for minimal loss.",
+      "specs": {
+        "application": "RF circuits",
+        "inductance": "1 nH – 1 µH",
+        "coreType": "Air/Ferrite"
+      }
+    },
+    {
+      "name": "Thin Film Inductors",
+      "price": 5.00,
+      "rating": 4.5,
+      "image": "asset/inductors/thin_film_inductors",
+      "productDetail": [
+        "Ultra-compact design",
+        "Highly accurate inductance",
+        "Suitable for high-frequency ICs"
+      ],
+      "description": "Thin Film Inductors offer precise and consistent performance for compact circuits, especially in RF and high-speed digital applications.",
+      "specs": {
+        "technology": "Thin-film",
+        "inductance": "1 nH – 1 µH",
+        "footprint": "SMD"
+      }
+    },
+    {
+      "name": "Toroidal Inductors",
+      "price": 118.00,
+      "rating": 4.3,
+      "image": "asset/inductors/toroidal_inductors",
+      "productDetail": [
+        "Efficient magnetic field containment",
+        "Reduces EMI and radiation",
+        "High energy storage in compact size"
+      ],
+      "description": "Toroidal Inductors are known for their efficient magnetic containment and minimal leakage. Ideal for power conversion and filtering.",
+      "specs": {
+        "coreShape": "Toroidal",
+        "application": "Power supplies, EMI filters",
+        "currentRating": "High"
+      }
+    }
+  ]
+}

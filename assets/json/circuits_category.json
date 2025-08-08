@@ -1,0 +1,175 @@
+{
+  "category": "Circuits",
+  "products": [
+    {
+      "name": "IC Socket",
+      "price": 33.0,
+      "rating": 3.5,
+      "image": "asset/circuits/ic_socket.png",
+      "productDetail": [
+        "Reliable connection for DIP ICs",
+        "Prevents damage during IC replacement",
+        "Durable plastic and metal construction"
+      ],
+      "description": "A durable IC socket designed to securely hold dual in-line package (DIP) integrated circuits. It allows for easy replacement and testing of ICs without soldering, making it ideal for prototyping and repair work.",
+      "specs": {
+        "type": "DIP",
+        "pins": 8,
+        "material": "Phosphor bronze contacts"
+      }
+    },
+    {
+      "name": "8-bit Microcontrollers IC",
+      "price": 339.0,
+      "rating": 5.0,
+      "image": "asset/circuits/8-bit_microcontrollers_ic.png",
+      "productDetail": [
+        "High performance 8-bit MCU",
+        "Extensive community support",
+        "Used in Arduino boards"
+      ],
+      "description": "A powerful 8-bit microcontroller widely used in embedded systems, featuring built-in peripherals and programmable flash memory. Ideal for robotics, IoT, and automation projects.",
+      "specs": {
+        "model": "ATmega328P",
+        "architecture": "8-bit AVR",
+        "flash": "32KB"
+      }
+    },
+    {
+      "name": "Audio IC",
+      "price": 392.0,
+      "rating": 1.5,
+      "image": "asset/circuits/audio_ic.png",
+      "productDetail": [
+        "Compact stereo amplifier module",
+        "Suitable for DIY audio systems",
+        "Onboard gain control"
+      ],
+      "description": "This audio IC module delivers amplified stereo sound output. It is perfect for hobby audio projects, intercoms, and small speaker setups. Designed for efficiency and simplicity.",
+      "specs": {
+        "type": "LM386 module",
+        "channels": 2,
+        "outputPower": "1W per channel"
+      }
+    },
+    {
+      "name": "Buffers & Transceivers IC",
+      "price": 49.0,
+      "rating": 4.4,
+      "image": "asset/circuits/buffers_&_transceivers_ic.png",
+      "productDetail": [
+        "Bidirectional communication support",
+        "Used for signal buffering",
+        "Fast switching capability"
+      ],
+      "description": "High-speed buffer/transceiver IC that facilitates reliable communication between devices in bus-based systems. Ensures data integrity with low propagation delay.",
+      "specs": {
+        "model": "74HC245",
+        "voltageRange": "2V - 6V",
+        "package": "DIP-20"
+      }
+    },
+    {
+      "name": "Drivers & Interfaces IC",
+      "price": 21.0,
+      "rating": 3.5,
+      "image": "asset/circuits/drivers_&_interfaces_ic.png",
+      "productDetail": [
+        "Controls motors and relays",
+        "Seven Darlington arrays in one package",
+        "TTL/CMOS compatible inputs"
+      ],
+      "description": "Versatile IC used for interfacing microcontrollers with higher power loads such as motors, relays, and lamps. Offers high current and voltage handling with built-in freewheeling diodes.",
+      "specs": {
+        "model": "ULN2003",
+        "outputCurrent": "500mA/channel",
+        "package": "DIP-16"
+      }
+    },
+    {
+      "name": "Frequency Management",
+      "price": 1447.0,
+      "rating": 4.1,
+      "image": "asset/circuits/frequency_management.png",
+      "productDetail": [
+        "Stable clock generation",
+        "Programmable output",
+        "High accuracy oscillator"
+      ],
+      "description": "A precision frequency management IC for generating stable clock signals. Suitable for use in microcontrollers, FPGAs, and timing-sensitive applications.",
+      "specs": {
+        "type": "Crystal oscillator",
+        "frequencyRange": "1MHz - 50MHz",
+        "interface": "I2C/SPI"
+      }
+    },
+    {
+      "name": "Linear voltage regulator",
+      "price": 69.0,
+      "rating": 3.5,
+      "image": "asset/circuits/linear_voltage_regulator.png",
+      "productDetail": [
+        "Stable 5V output",
+        "Overheat protection",
+        "Simple 3-pin design"
+      ],
+      "description": "A reliable linear voltage regulator providing consistent 5V output, ideal for powering sensitive analog and digital circuits. Protects against overcurrent and overheating.",
+      "specs": {
+        "outputVoltage": "5V",
+        "inputVoltage": "7V - 20V",
+        "current": "1A"
+      }
+    },
+    {
+      "name": "Logic IC",
+      "price": 216.0,
+      "rating": 3.4,
+      "image": "asset/circuits/logic_ic.png",
+      "productDetail": [
+        "Performs basic logic operations",
+        "TTL-compatible",
+        "Used in combinational logic"
+      ],
+      "description": "Basic NAND logic IC used in digital circuits. Provides fast switching and consistent logic output for building complex logic gates and systems.",
+      "specs": {
+        "model": "74LS00",
+        "type": "Quad 2-input NAND",
+        "supplyVoltage": "5V"
+      }
+    },
+    {
+      "name": "Mux & Demux IC",
+      "price": 11.0,
+      "rating": 2.5,
+      "image": "asset/circuits/mux_&_demux_ic.png",
+      "productDetail": [
+        "Routes multiple signals",
+        "Controlled by select inputs",
+        "Supports logic-level switching"
+      ],
+      "description": "Multiplexer and demultiplexer IC designed for efficient signal selection and routing in digital circuits. Ideal for memory addressing and switching applications.",
+      "specs": {
+        "model": "74HC157",
+        "channels": 4,
+        "logicLevel": "TTL"
+      }
+    },
+    {
+      "name": "Power management IC",
+      "price": 21.0,
+      "rating": 4.1,
+      "image": "asset/circuits/power_management_ic.png",
+      "productDetail": [
+        "Efficient power regulation",
+        "Compact form factor",
+        "Protective circuitry built-in"
+      ],
+      "description": "Compact IC designed to manage power distribution in electronic circuits. Ensures stable operation of devices with protection against overvoltage and overheating.",
+      "specs": {
+        "type": "PMIC",
+        "features": "Over-voltage and thermal protection",
+        "output": "Adjustable"
+      }
+    }
+  ]
+}

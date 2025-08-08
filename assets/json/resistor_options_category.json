@@ -1,0 +1,175 @@
+{
+  "category": "Resistor options",
+  "products": [
+    {
+      "name": "Carbon Resistors",
+      "price": 32.0,
+      "rating": 1.5,
+      "image": "asset/resistor_options/carbon_resistors",
+      "productDetail": [
+        "General-purpose resistors",
+        "Economical and widely available",
+        "Stable resistance over time"
+      ],
+      "description": "Carbon resistors are widely used in electronic circuits for general resistance needs. They offer a cost-effective solution and are known for their long-term stability and reliable performance.",
+      "specs": {
+        "type": "Fixed",
+        "tolerance": "\u00b15%",
+        "resistanceRange": "1\u03a9 - 10M\u03a9"
+      }
+    },
+    {
+      "name": "Current Sense Resistors",
+      "price": 25.0,
+      "rating": 4.0,
+      "image": "asset/resistor_options/current_sense_resistors",
+      "productDetail": [
+        "Low resistance value",
+        "High accuracy",
+        "Used for current measurement"
+      ],
+      "description": "Current sense resistors are precision components used to measure electrical current by detecting voltage drops. Essential for power monitoring and circuit protection systems.",
+      "specs": {
+        "type": "Low-ohmic",
+        "powerRating": "0.5W - 5W",
+        "resistance": "0.001\u03a9 - 1\u03a9"
+      }
+    },
+    {
+      "name": "Metal Film Resistor",
+      "price": 5.0,
+      "rating": 1.5,
+      "image": "asset/resistor_options/metal_film_resistor",
+      "productDetail": [
+        "Tight tolerance",
+        "Low temperature coefficient",
+        "Low noise operation"
+      ],
+      "description": "Metal film resistors are known for their accuracy and stability. They provide precise resistance values and are suitable for high-frequency or low-noise applications.",
+      "specs": {
+        "tolerance": "\u00b11%",
+        "powerRating": "0.25W",
+        "resistanceRange": "10\u03a9 - 1M\u03a9"
+      }
+    },
+    {
+      "name": "Metal Oxide Resistors",
+      "price": 10.0,
+      "rating": 3.4,
+      "image": "asset/resistor_options/metal_oxide_resistors",
+      "productDetail": [
+        "High temperature resistance",
+        "Flameproof coating",
+        "Good surge capability"
+      ],
+      "description": "Metal oxide resistors are used in environments with high temperatures and electrical surges. Their flame-resistant coating makes them ideal for safety-critical designs.",
+      "specs": {
+        "powerRating": "0.5W - 3W",
+        "tolerance": "\u00b15%",
+        "resistanceRange": "10\u03a9 - 10M\u03a9"
+      }
+    },
+    {
+      "name": "Resistor Networks & Arr.",
+      "price": 5.0,
+      "rating": 3.0,
+      "image": "asset/resistor_options/resistor_networks_&_arr.",
+      "productDetail": [
+        "Multiple resistors in one package",
+        "Space-saving design",
+        "Used in digital circuits"
+      ],
+      "description": "Resistor networks or arrays integrate multiple resistors into a single package. They simplify circuit design and are widely used in digital logic systems and pull-up configurations.",
+      "specs": {
+        "packageType": "SIP/DIP",
+        "configuration": "Bussed or Isolated",
+        "resistance": "10\u03a9 - 100k\u03a9"
+      }
+    },
+    {
+      "name": "Thermistor",
+      "price": 10.0,
+      "rating": 4.3,
+      "image": "asset/resistor_options/thermistor",
+      "productDetail": [
+        "Temperature-sensitive",
+        "NTC/PTC types",
+        "Used in temperature sensing"
+      ],
+      "description": "Thermistors are resistors that vary resistance based on temperature. Commonly used in temperature sensing, control, and compensation applications in electronic devices.",
+      "specs": {
+        "type": "NTC",
+        "resistance@25\u00b0C": "10k\u03a9",
+        "tolerance": "\u00b15%"
+      }
+    },
+    {
+      "name": "Varistor",
+      "price": 7.0,
+      "rating": 1.5,
+      "image": "asset/resistor_options/varistor",
+      "productDetail": [
+        "Voltage-dependent resistor",
+        "Used for surge protection",
+        "Fast response time"
+      ],
+      "description": "Varistors protect circuits from voltage spikes and surges. They are widely used in power supplies, consumer electronics, and industrial equipment for overvoltage protection.",
+      "specs": {
+        "type": "MOV",
+        "voltageRange": "14V - 680V",
+        "energyAbsorption": "10J - 300J"
+      }
+    },
+    {
+      "name": "Wirewound Resistors",
+      "price": 12.0,
+      "rating": 3.4,
+      "image": "asset/resistor_options/wirewound_resistors",
+      "productDetail": [
+        "High power dissipation",
+        "Stable performance",
+        "Precision resistance values"
+      ],
+      "description": "Wirewound resistors are known for their high power handling and precision. Ideal for high current circuits, power supplies, and load testing applications.",
+      "specs": {
+        "powerRating": "1W - 50W",
+        "tolerance": "\u00b11% - \u00b15%",
+        "resistanceRange": "0.1\u03a9 - 10k\u03a9"
+      }
+    },
+    {
+      "name": "Resistors Kit",
+      "price": 261.0,
+      "rating": 2.5,
+      "image": "asset/resistor_options/resistors_kit",
+      "productDetail": [
+        "Comprehensive resistor range",
+        "Ideal for prototyping",
+        "Labeled and sorted"
+      ],
+      "description": "The resistor kit includes a wide variety of resistance values, making it perfect for prototyping, education, and lab use. Conveniently organized and labeled for easy access.",
+      "specs": {
+        "quantity": "500+ pcs",
+        "resistanceRange": "1\u03a9 - 1M\u03a9",
+        "tolerance": "\u00b15%"
+      }
+    },
+    {
+      "name": "Light Dependent (LDR)",
+      "price": 58.0,
+      "rating": 5.1,
+      "image": "asset/resistor_options/light_dependent_(ldr)",
+      "productDetail": [
+        "Light-sensitive resistor",
+        "Used in light-sensing circuits",
+        "High resistance in darkness"
+      ],
+      "description": "LDRs change resistance based on light intensity and are widely used in light-detection applications such as automatic lights, solar garden lights, and alarm systems.",
+      "specs": {
+        "resistanceDark": ">1M\u03a9",
+        "resistanceLight": "<10k\u03a9",
+        "responseTime": "<20ms"
+      }
+    }
+  ]
+}
