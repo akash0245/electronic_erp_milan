@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:milan_savaliya/model/product.dart';
+import 'package:milan_savaliya/screens/order_detail.dart';
 import 'package:sizer/sizer.dart';
 
 import '../controller/product_detail_cnt.dart';
 
 class ProductDetailScreen extends StatelessWidget {
 
-  final ProductDetailController controller = Get.put(ProductDetailController());
+  final ProductDetailController controller = Get.find();
+  String arrowImgPath = 'assets/images/dashboard/arrow.png';
 
   @override
   Widget build(BuildContext context) {
@@ -18,121 +21,183 @@ class ProductDetailScreen extends StatelessWidget {
         );
       }
 
-      final product = controller.product;
+      final Product product = controller.productDetail;
 
       return Scaffold(
         appBar: AppBar(
-          title: Text(product['name'] ?? 'Product Detail'),
+          title: Text(product.name),
           leading: BackButton(),
         ),
-        body: SingleChildScrollView(
-          padding: EdgeInsets.all(4.w),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Image.asset(
-                product['image'] ?? '',
-                width: 100.w,
-                height: 30.h,
-                fit: BoxFit.contain,
+        body: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.all(4.w),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Image.asset(
+                      product.imagePath ?? '',
+                      width: 100.w,
+                      height: 30.h,
+                      fit: BoxFit.contain,
+                    ),
+                    SizedBox(height: 2.h),
+
+                    Text(
+                      product.name ?? '',
+                      style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
+                    ),
+
+                    SizedBox(height: 1.h),
+
+                    Row(
+                      children: [
+                        Icon(Icons.star, color: Colors.orange, size: 5.w),
+                        SizedBox(width: 2.w),
+                        Text(product.rating.toString()),
+                      ],
+                    ),
+                    SizedBox(height: 2.h),
+                    Row(
+                      children: [
+                        Image.asset(arrowImgPath, width: 5.w,),
+                        SizedBox(width: 1.w,),
+                        Text(
+                          'Product Detail:',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 1.h),
+
+                    ...List.generate(product.productDetail.length, (index) {
+                      return Padding(
+                        padding: EdgeInsets.only(left: 5.w),
+                        child: Text("${index + 1}. ${product.productDetail[index]}"),
+                      );
+                    }),
+
+                    SizedBox(height: 2.h),
+
+                    Row(
+                      children: [
+                        Image.asset(arrowImgPath, width: 5.w,),
+                        SizedBox(width: 1.w,),
+                        Text(
+                          'Category: ${controller.category}',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 2.h),
+
+                    Row(
+                      children: [
+                        Image.asset(arrowImgPath, width: 5.w,),
+                        SizedBox(width: 1.w,),
+                        Text(
+                          'Description:',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 1.h),
+                    Padding(
+                      padding: EdgeInsets.only(left: 5.w),
+                      child: Text(product.description ?? ''),
+                    ),
+
+                    SizedBox(height: 2.h),
+
+                    Row(
+                      children: [
+                        Image.asset(arrowImgPath, width: 5.w,),
+                        SizedBox(width: 1.w,),
+                        Text(
+                          'Specifications',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 1.h),
+
+                    buildSpecs(product.lstSpecification),
+
+                    SizedBox(height: 1.h),
+
+                  ],
+                ),
               ),
-              SizedBox(height: 2.h),
-
-              Text(
-                product['name'] ?? '',
-                style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 4.w, vertical: 3.h),
+              decoration: BoxDecoration(
+                color: Colors.grey[300],
+                borderRadius: BorderRadius.circular(5.w)
               ),
-
-              SizedBox(height: 1.h),
-
-              Row(
-                children: [
-                  Icon(Icons.star, color: Colors.orange, size: 10.w),
-                  SizedBox(width: 2.w),
-                  Text(product['rating'].toString()),
-                ],
-              ),
-              SizedBox(height: 2.h),
-              Text(
-                'Product Detail:',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 1.h),
-
-              ...List.generate(product['productDetail'].length, (index) {
-                return Text("${index + 1}. ${product['productDetail'][index]}");
-              }),
-
-              SizedBox(height: 2.h),
-
-              Text(
-                'Category: ${product['category']}',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 2.h),
-
-              Text(
-                'Description:',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 1.h),
-              Text(product['description'] ?? ''),
-
-              SizedBox(height: 2.h),
-
-              Text(
-                'Specifications',
-                style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600),
-              ),
-              SizedBox(height: 1.h),
-
-              ..._buildSpecs(product['specs']),
-
-              Spacer(),
-
-              Row(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
-                    "₹ ${product['price'] ?? '0.00'}",
+                    "₹ ${product.price}",
                     style: TextStyle(
-                      fontSize: 16.sp,
+                      fontSize: 19.sp,
                       fontWeight: FontWeight.bold,
                       color: Colors.red,
                     ),
                   ),
-                  Spacer(),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Your buy logic
+                  InkWell(
+                    onTap: (){
+                      Get.to(() => OrderDetail(), arguments: [product, controller.category]);
                     },
-                    child: Text('BUY NOW', style: TextStyle(fontSize: 12.sp)),
+                      child: Image.asset('assets/images/dashboard/buy_btn.png',
+                      width: 35.w,
+                        height: 8.h,
+                    )
                   ),
                 ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       );
     });
     }
   }
 
-List<Widget> _buildSpecs(Map<String, dynamic>? specs) {
-  if (specs == null) return [];
+Widget buildSpecs(List<MapEntry<String, dynamic>> specs) {
+  if (specs.isEmpty) return SizedBox();
 
-  return specs.entries.map((entry) {
-    final label = formatKey(entry.key);
-    final value = entry.value.toString();
-    return Padding(
+  return Padding(
       padding: EdgeInsets.symmetric(vertical: 0.5.h),
-      child: Row(
-        children: [
-          Text("$label: ", style: TextStyle(fontWeight: FontWeight.w600)),
-          Expanded(child: Text(value)),
-        ],
+      child: ListView.separated(
+        shrinkWrap: true,
+        physics: NeverScrollableScrollPhysics(),
+        itemCount: specs.length,
+        separatorBuilder: (context, index){
+          return Padding(
+              padding: EdgeInsetsGeometry.symmetric(vertical: 2.w),
+            child: Container(
+              color: Colors.grey[500],
+              height: 0.1.w,
+            ),
+          );
+        },
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: EdgeInsets.only(left: 5.w),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("${formatKey(specs[index].key.toString())}: ", style: TextStyle(fontWeight: FontWeight.w600)),
+                Expanded(child: Text(specs[index].value.toString())),
+              ],
+            ),
+          );
+        }
       ),
     );
-  }).toList();
 }
 
 String formatKey(String key) {

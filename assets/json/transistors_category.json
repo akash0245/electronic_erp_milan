@@ -6,7 +6,7 @@
       "price": 4.0,
       "rating": 2.5,
       "description": "Reliable bipolar transistors ideal for amplification and switching.",
-      "image": "assets/transistors/bipolar_transistors.png",
+      "image": "assets/images/componets_categories/transistors/bipolar_transistors.png",
       "specs": {
         "type": "Bipolar Junction",
         "application": "Amplification, Switching",
@@ -25,7 +25,7 @@
       "price": 14.0,
       "rating": 3.2,
       "description": "High gain Darlington transistors for efficient power switching.",
-      "image": "assets/transistors/darlington_transistors.png",
+      "image": "assets/images/componets_categories/transistors/darlington_transistors.png",
       "specs": {
         "type": "Darlington",
         "application": "Power Switching",
@@ -44,7 +44,7 @@
       "price": 9.0,
       "rating": 3.5,
       "description": "Digital transistors with built-in bias resistors for logic-level control.",
-      "image": "assets/transistors/digital_transistors.png",
+      "image": "assets/images/componets_categories/transistors/digital_transistor.png",
       "specs": {
         "type": "Digital",
         "application": "Logic Circuits",
@@ -63,7 +63,7 @@
       "price": 344.0,
       "rating": 2.4,
       "description": "Insulated-Gate Bipolar Transistors for high voltage and current applications.",
-      "image": "assets/transistors/igbts.png",
+      "image": "assets/images/componets_categories/transistors/igbts.png",
       "specs": {
         "type": "IGBT",
         "application": "Inverters, Motor Drives",
@@ -82,7 +82,7 @@
       "price": 11.0,
       "rating": 3.2,
       "description": "Junction Field-Effect Transistors with high input impedance.",
-      "image": "assets/transistors/jfet.png",
+      "image": "assets/images/componets_categories/transistors/jfet.png",
       "specs": {
         "type": "JFET",
         "application": "Analog Switches, Amplifiers",
@@ -101,7 +101,7 @@
       "price": 5.0,
       "rating": 4.3,
       "description": "Efficient and fast-switching MOSFETs for power management.",
-      "image": "assets/transistors/mosfet.png",
+      "image": "assets/images/componets_categories/transistors/mosfet.png",
       "specs": {
         "type": "MOSFET",
         "application": "Power Supplies, Switching",
@@ -120,7 +120,7 @@
       "price": 395.0,
       "rating": 3.5,
       "description": "High-frequency RF transistors for radio and communication circuits.",
-      "image": "assets/transistors/rf_transistors.png",
+      "image": "assets/images/componets_categories/transistors/rf_transistors.png",
       "specs": {
         "type": "RF",
         "application": "RF Amplifiers, Oscillators",

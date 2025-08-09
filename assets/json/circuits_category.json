@@ -5,7 +5,7 @@
       "name": "IC Socket",
       "price": 33.0,
       "rating": 3.5,
-      "image": "asset/circuits/ic_socket.png",
+      "image": "assets/images/componets_categories/circuits/ic_socket.png",
       "productDetail": [
         "Reliable connection for DIP ICs",
         "Prevents damage during IC replacement",
@@ -22,7 +22,7 @@
       "name": "8-bit Microcontrollers IC",
       "price": 339.0,
       "rating": 5.0,
-      "image": "asset/circuits/8-bit_microcontrollers_ic.png",
+      "image": "assets/images/componets_categories/circuits/8_bit_microcontrollers_ic.png",
       "productDetail": [
         "High performance 8-bit MCU",
         "Extensive community support",
@@ -39,7 +39,7 @@
       "name": "Audio IC",
       "price": 392.0,
       "rating": 1.5,
-      "image": "asset/circuits/audio_ic.png",
+      "image": "assets/images/componets_categories/circuits/audio_ic.png",
       "productDetail": [
         "Compact stereo amplifier module",
         "Suitable for DIY audio systems",
@@ -56,7 +56,7 @@
       "name": "Buffers & Transceivers IC",
       "price": 49.0,
       "rating": 4.4,
-      "image": "asset/circuits/buffers_&_transceivers_ic.png",
+      "image": "assets/images/componets_categories/circuits/buffers_and_transceivers_ic.png",
       "productDetail": [
         "Bidirectional communication support",
         "Used for signal buffering",
@@ -73,7 +73,7 @@
       "name": "Drivers & Interfaces IC",
       "price": 21.0,
       "rating": 3.5,
-      "image": "asset/circuits/drivers_&_interfaces_ic.png",
+      "image": "assets/images/componets_categories/circuits/drivers_and_interface_ic.png",
       "productDetail": [
         "Controls motors and relays",
         "Seven Darlington arrays in one package",
@@ -90,7 +90,7 @@
       "name": "Frequency Management",
       "price": 1447.0,
       "rating": 4.1,
-      "image": "asset/circuits/frequency_management.png",
+      "image": "assets/images/componets_categories/circuits/frequency_management.png",
       "productDetail": [
         "Stable clock generation",
         "Programmable output",
@@ -107,7 +107,7 @@
       "name": "Linear voltage regulator",
       "price": 69.0,
       "rating": 3.5,
-      "image": "asset/circuits/linear_voltage_regulator.png",
+      "image": "assets/images/componets_categories/circuits/linear_voltage_regulator.png",
       "productDetail": [
         "Stable 5V output",
         "Overheat protection",
@@ -124,7 +124,7 @@
       "name": "Logic IC",
       "price": 216.0,
       "rating": 3.4,
-      "image": "asset/circuits/logic_ic.png",
+      "image": "assets/images/componets_categories/circuits/logic_ic.png",
       "productDetail": [
         "Performs basic logic operations",
         "TTL-compatible",
@@ -141,7 +141,7 @@
       "name": "Mux & Demux IC",
       "price": 11.0,
       "rating": 2.5,
-      "image": "asset/circuits/mux_&_demux_ic.png",
+      "image": "assets/images/componets_categories/circuits/mux_demux_ic.png",
       "productDetail": [
         "Routes multiple signals",
         "Controlled by select inputs",
@@ -158,7 +158,7 @@
       "name": "Power management IC",
       "price": 21.0,
       "rating": 4.1,
-      "image": "asset/circuits/power_management_ic.png",
+      "image": "assets/images/componets_categories/circuits/power_management_ic.png",
       "productDetail": [
         "Efficient power regulation",
         "Compact form factor",

@@ -5,7 +5,7 @@
       "name": "Air Core Inductors",
       "price": 50.00,
       "rating": 2.5,
-      "image": "asset/inductors/air_core_inductors",
+      "image": "assets/images/componets_categories/inductors/air_core_inductors.png",
       "productDetail": [
         "Non-magnetic core for high-frequency stability",
         "Minimal core loss and interference",
@@ -22,7 +22,7 @@
       "name": "Charging Coils & Arrays",
       "price": 26.00,
       "rating": 2.2,
-      "image": "asset/inductors/charging_coils_and_arrays",
+      "image": "assets/images/componets_categories/inductors/charging_coils_and_arrays.png",
       "productDetail": [
         "Compact size with high current capability",
         "Suitable for wireless charging modules",
@@ -39,7 +39,7 @@
       "name": "Coupled Inductors",
       "price": 35.00,
       "rating": 4.5,
-      "image": "asset/inductors/coupled_inductors",
+      "image": "assets/images/componets_categories/inductors/coupled_inductors.png",
       "productDetail": [
         "Used in power converters",
         "Efficient magnetic coupling",
@@ -56,7 +56,7 @@
       "name": "Fixed Value Inductors",
       "price": 7.00,
       "rating": 4.4,
-      "image": "asset/inductors/fixed_value_inductors",
+      "image": "assets/images/componets_categories/inductors/fixed_value_inductors.png",
       "productDetail": [
         "Stable inductance value",
         "Standardized size",
@@ -73,7 +73,7 @@
       "name": "High Frequency Inductors",
       "price": 3.00,
       "rating": 4.2,
-      "image": "asset/inductors/high_frequency_inductors",
+      "image": "assets/images/componets_categories/inductors/high_frequency_inductors.png",
       "productDetail": [
         "Optimized for MHz frequency ranges",
         "Low core losses and high Q-factor",
@@ -90,7 +90,7 @@
       "name": "Multilayer Inductors",
       "price": 5.00,
       "rating": 4.3,
-      "image": "asset/inductors/multilayer_inductors",
+      "image": "assets/images/componets_categories/inductors/multi_inductors.png",
       "productDetail": [
         "High inductance in small size",
         "Stable performance under heat",
@@ -107,7 +107,7 @@
       "name": "Power Inductors",
       "price": 395.00,
       "rating": 3.5,
-      "image": "asset/inductors/power_inductors",
+      "image": "assets/images/componets_categories/inductors/power_inductors.png",
       "productDetail": [
         "High current capacity",
         "Shielded or unshielded variants",
@@ -124,7 +124,7 @@
       "name": "RF Inductor",
       "price": 42.00,
       "rating": 2.3,
-      "image": "asset/inductors/rf_inductor",
+      "image": "assets/images/componets_categories/inductors/rf_inductors.png",
       "productDetail": [
         "Tuned for radio frequencies",
         "Minimal signal attenuation",
@@ -141,7 +141,7 @@
       "name": "Thin Film Inductors",
       "price": 5.00,
       "rating": 4.5,
-      "image": "asset/inductors/thin_film_inductors",
+      "image": "assets/images/componets_categories/inductors/thin_film_inductors.png",
       "productDetail": [
         "Ultra-compact design",
         "Highly accurate inductance",
@@ -158,7 +158,7 @@
       "name": "Toroidal Inductors",
       "price": 118.00,
       "rating": 4.3,
-      "image": "asset/inductors/toroidal_inductors",
+      "image": "assets/images/componets_categories/inductors/toroidal_inductors.png",
       "productDetail": [
         "Efficient magnetic field containment",
         "Reduces EMI and radiation",

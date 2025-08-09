@@ -5,7 +5,7 @@
       "name": "Carbon Resistors",
       "price": 32.0,
       "rating": 1.5,
-      "image": "asset/resistor_options/carbon_resistors",
+      "image": "assets/images/componets_categories/resistor_options/carbon_resistor.png",
       "productDetail": [
         "General-purpose resistors",
         "Economical and widely available",
@@ -22,7 +22,7 @@
       "name": "Current Sense Resistors",
       "price": 25.0,
       "rating": 4.0,
-      "image": "asset/resistor_options/current_sense_resistors",
+      "image": "assets/images/componets_categories/resistor_options/current_sense_resistor.png",
       "productDetail": [
         "Low resistance value",
         "High accuracy",
@@ -39,7 +39,7 @@
       "name": "Metal Film Resistor",
       "price": 5.0,
       "rating": 1.5,
-      "image": "asset/resistor_options/metal_film_resistor",
+      "image": "assets/images/componets_categories/resistor_options/metal_film_resistor.png",
       "productDetail": [
         "Tight tolerance",
         "Low temperature coefficient",
@@ -56,7 +56,7 @@
       "name": "Metal Oxide Resistors",
       "price": 10.0,
       "rating": 3.4,
-      "image": "asset/resistor_options/metal_oxide_resistors",
+      "image": "assets/images/componets_categories/resistor_options/metal_oxide_resistor.png",
       "productDetail": [
         "High temperature resistance",
         "Flameproof coating",
@@ -73,7 +73,7 @@
       "name": "Resistor Networks & Arr.",
       "price": 5.0,
       "rating": 3.0,
-      "image": "asset/resistor_options/resistor_networks_&_arr.",
+      "image": "assets/images/componets_categories/resistor_options/resistor_networks_and_arr.png",
       "productDetail": [
         "Multiple resistors in one package",
         "Space-saving design",
@@ -90,7 +90,7 @@
       "name": "Thermistor",
       "price": 10.0,
       "rating": 4.3,
-      "image": "asset/resistor_options/thermistor",
+      "image": "assets/images/componets_categories/resistor_options/thermistor.png",
       "productDetail": [
         "Temperature-sensitive",
         "NTC/PTC types",
@@ -107,7 +107,7 @@
       "name": "Varistor",
       "price": 7.0,
       "rating": 1.5,
-      "image": "asset/resistor_options/varistor",
+      "image": "assets/images/componets_categories/resistor_options/varistor.png",
       "productDetail": [
         "Voltage-dependent resistor",
         "Used for surge protection",
@@ -124,7 +124,7 @@
       "name": "Wirewound Resistors",
       "price": 12.0,
       "rating": 3.4,
-      "image": "asset/resistor_options/wirewound_resistors",
+      "image": "assets/images/componets_categories/resistor_options/wirewound_resistors.png",
       "productDetail": [
         "High power dissipation",
         "Stable performance",
@@ -141,7 +141,7 @@
       "name": "Resistors Kit",
       "price": 261.0,
       "rating": 2.5,
-      "image": "asset/resistor_options/resistors_kit",
+      "image": "assets/images/componets_categories/resistor_options/resistors_kit.png",
       "productDetail": [
         "Comprehensive resistor range",
         "Ideal for prototyping",
@@ -158,7 +158,7 @@
       "name": "Light Dependent (LDR)",
       "price": 58.0,
       "rating": 5.1,
-      "image": "asset/resistor_options/light_dependent_(ldr)",
+      "image": "assets/images/componets_categories/resistor_options/light_dependent.png",
       "productDetail": [
         "Light-sensitive resistor",
         "Used in light-sensing circuits",

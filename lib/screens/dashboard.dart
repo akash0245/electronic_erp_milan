@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import '../controller/dashboard_cnt.dart';
 import '../model/product.dart';
+import 'product_detail.dart';
 
 class Dashboard extends GetView<DashboardController> {
   const Dashboard({super.key});
@@ -212,60 +213,65 @@ class Dashboard extends GetView<DashboardController> {
   }
 
   Widget _buildProductItem(Product product) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.grey[200],
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Center(
-              child: Image.asset(
-                product.imagePath,
-                width: 80,
-                height: 80,
-                fit: BoxFit.contain,
+    return InkWell(
+      onTap: (){
+        Get.to(() => ProductDetailScreen(), arguments: [product, "Electronic"]);
+      },
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(10),
               ),
-            ),
-          ),
-        ),
-        SizedBox(height: 0.5.h),
-        Text(
-          product.name,
-          style: TextStyle(
-            fontSize: 13.sp,
-          ),
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              '₹ ${product.price.toStringAsFixed(2)}',
-              style: TextStyle(
-                fontSize: 13.sp,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(width: 1.w),
-            Row(
-              children: [
-                Text(
-                  '(${product.rating.toStringAsFixed(2)}',
-                  style: TextStyle(
-                    fontSize: 12.sp,
-                  ),
+              child: Center(
+                child: Image.asset(
+                  product.imagePath,
+                  width: 80,
+                  height: 80,
+                  fit: BoxFit.contain,
                 ),
-                Icon(Icons.star, color: Colors.amber, size: 3.w,),
-                Text(')', style: TextStyle(fontSize: 12.sp),),
-              ],
+              ),
             ),
-          ],
-        ),
-      ],
+          ),
+          SizedBox(height: 0.5.h),
+          Text(
+            product.name,
+            style: TextStyle(
+              fontSize: 13.sp,
+            ),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                '₹ ${product.price.toStringAsFixed(2)}',
+                style: TextStyle(
+                  fontSize: 13.sp,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(width: 1.w),
+              Row(
+                children: [
+                  Text(
+                    '(${product.rating.toStringAsFixed(2)}',
+                    style: TextStyle(
+                      fontSize: 12.sp,
+                    ),
+                  ),
+                  Icon(Icons.star, color: Colors.amber, size: 3.w,),
+                  Text(')', style: TextStyle(fontSize: 12.sp),),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

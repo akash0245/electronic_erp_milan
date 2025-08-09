@@ -1,0 +1,73 @@
+import 'package:get/get.dart';
+
+import '../model/product.dart';
+
+class OrderDetailController extends GetxController {
+  final name = ''.obs;
+  final address = ''.obs;
+  final email = ''.obs;
+
+  final nameError = RxString('');
+  final addressError = RxString('');
+  final emailError = RxString('');
+
+
+  late Product productDetail;
+  late String category;
+
+  @override
+  void onInit() {
+     productDetail = Get.arguments[0] ?? {};
+     category = Get.arguments[1] ?? "";
+     super.onInit();
+  }
+
+  void validateName(String value) {
+    name.value = value;
+    if (value.isEmpty) {
+      nameError.value = 'Name is required';
+    } else if (value.length > 100) {
+      nameError.value = 'Name must be less than 100 characters';
+    } else {
+      nameError.value = '';
+    }
+  }
+
+  void validateAddress(String value) {
+    address.value = value;
+    if (value.isEmpty) {
+      addressError.value = 'Address is required';
+    } else {
+      addressError.value = '';
+    }
+  }
+
+  void validateEmail(String value) {
+    email.value = value;
+    if (value.isEmpty) {
+      emailError.value = 'Email is required';
+    } else if (!GetUtils.isEmail(value)) {
+      emailError.value = 'Enter a valid email address';
+    } else {
+      emailError.value = '';
+    }
+  }
+
+  bool validateForm() {
+    validateName(name.value);
+    validateAddress(address.value);
+    validateEmail(email.value);
+
+    return nameError.value.isEmpty &&
+        addressError.value.isEmpty &&
+        emailError.value.isEmpty;
+  }
+
+  void submitOrder() {
+    if (validateForm()) {
+      // Process order
+      Get.snackbar('Success', 'Order confirmed!');
+      // You can add navigation or API call here
+    }
+  }
+}
