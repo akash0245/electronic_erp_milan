@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // Navigate after 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
-      Get.offAll(Get.to(() => Dashboard()));
+      Get.offAll(() => Dashboard());
     });
 
     return Scaffold(
