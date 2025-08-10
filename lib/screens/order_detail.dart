@@ -9,80 +9,112 @@ class OrderDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
         title: Text('Fill The Details'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: Stack(
           children: [
-            Text(
-              'Your Name :',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
-            Obx(() => TextFormField(
-              onChanged: controller.validateName,
-              decoration: InputDecoration(
-                hintText: 'Enter your name',
-                errorText: controller.nameError.value.isEmpty
-                    ? null
-                    : controller.nameError.value,
-                border: OutlineInputBorder(),
-              ),
-              maxLength: 100,
-            )),
-            SizedBox(height: 16),
+            Column(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        'Your Name :',
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(height: 8),
+                      Obx(() => TextFormField(
+                        onChanged: controller.validateName,
+                        decoration: InputDecoration(
+                          hintText: 'Enter your name',
+                          errorText: controller.nameError.value.isEmpty
+                              ? null
+                              : controller.nameError.value,
+                          border: OutlineInputBorder(),
+                        ),
+                        maxLength: 100,
+                      )),
+                      SizedBox(height: 16),
 
-            Text(
-              'Address :',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
-            Obx(() => TextFormField(
-              onChanged: controller.validateAddress,
-              decoration: InputDecoration(
-                hintText: 'Enter your address',
-                errorText: controller.addressError.value.isEmpty
-                    ? null
-                    : controller.addressError.value,
-                border: OutlineInputBorder(),
-              ),
-              maxLines: 3,
-            )),
-            SizedBox(height: 16),
+                      Text(
+                        'Address :',
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(height: 8),
+                      Obx(() => TextFormField(
+                        onChanged: controller.validateAddress,
+                        decoration: InputDecoration(
+                          hintText: 'Enter your address',
+                          errorText: controller.addressError.value.isEmpty
+                              ? null
+                              : controller.addressError.value,
+                          border: OutlineInputBorder(),
+                        ),
+                        maxLines: 3,
+                      )),
+                      SizedBox(height: 16),
 
-            Text(
-              'Email :',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
-            Obx(() => TextFormField(
-              onChanged: controller.validateEmail,
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                hintText: 'Enter your email',
-                errorText: controller.emailError.value.isEmpty
-                    ? null
-                    : controller.emailError.value,
-                border: OutlineInputBorder(),
-              ),
-            )),
-            SizedBox(height: 24),
-
-            ElevatedButton(
-              onPressed: controller.submitOrder,
-              child: Padding(
-                padding: EdgeInsets.all(12.0),
-                child: Text(
-                  'CONFIRM ORDER',
-                  style: TextStyle(fontSize: 16),
+                      Text(
+                        'Email :',
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(height: 8),
+                      Obx(() => TextFormField(
+                        onChanged: controller.validateEmail,
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: InputDecoration(
+                          hintText: 'Enter your email',
+                          errorText: controller.emailError.value.isEmpty
+                              ? null
+                              : controller.emailError.value,
+                          border: OutlineInputBorder(),
+                        ),
+                      )),
+                    ],
+                  ),
                 ),
-              ),
+                InkWell(
+                  onTap: controller.submitOrder,
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        gradient: LinearGradient(
+                            colors: [Color(0xFFA1D56E), Color(0xFF62BD5A)],
+                            begin: Alignment.centerLeft,
+                          end: Alignment.centerRight
+                        )
+                      ),
+                      child: Center(
+                        child: Text(
+                          'CONFIRM ORDER',
+                          style: TextStyle(
+                              fontSize: 16,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
+            controller.isProcessing.value
+            ? Center(
+            child: CircularProgressIndicator(),
+            )
+                : SizedBox(),
           ],
         ),
+
       ),
     );
   }

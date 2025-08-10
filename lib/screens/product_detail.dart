@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:milan_savaliya/model/product.dart';
-import 'package:milan_savaliya/screens/order_detail.dart';
 import 'package:sizer/sizer.dart';
 
 import '../controller/product_detail_cnt.dart';
+import '../model/product.dart';
+import 'order_detail.dart';
 
 class ProductDetailScreen extends StatelessWidget {
 

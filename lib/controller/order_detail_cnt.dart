@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 
+import '../model/orders.dart';
 import '../model/product.dart';
+import '../screens/order_list.dart';
 
 class OrderDetailController extends GetxController {
   final name = ''.obs;
@@ -10,6 +12,8 @@ class OrderDetailController extends GetxController {
   final nameError = RxString('');
   final addressError = RxString('');
   final emailError = RxString('');
+
+  RxBool isProcessing = false.obs;
 
 
   late Product productDetail;
@@ -64,10 +68,31 @@ class OrderDetailController extends GetxController {
   }
 
   void submitOrder() {
+    isProcessing(true);
     if (validateForm()) {
+
+
+      List<Orders> orderList = Orders.getUserList();
+
+      Orders newOrder = Orders(
+          category: category,
+          name: name.value,
+          address: address.value,
+          email: email.value,
+          orderProduct: productDetail);
+
+      orderList.add(newOrder);
+
+      Orders.setUserList(orderList);
+
       // Process order
       Get.snackbar('Success', 'Order confirmed!');
-      // You can add navigation or API call here
+
+      isProcessing(false);
+
+      Get.off(() => OrderList());
+
     }
+    isProcessing(false);
   }
 }

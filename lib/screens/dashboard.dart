@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import '../controller/dashboard_cnt.dart';
 import '../model/product.dart';
+import 'order_list.dart';
 import 'product_detail.dart';
 
 class Dashboard extends GetView<DashboardController> {
@@ -27,6 +28,7 @@ class Dashboard extends GetView<DashboardController> {
               child: InkWell(
                 borderRadius: BorderRadius.all(Radius.circular(5.w)),
                 onTap: (){
+                  Get.to(() => OrderList());
 
                 },
                 child: Image.asset(
