@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import '../controller/dashboard_cnt.dart';
 import '../model/product.dart';
+import 'home_category.dart';
 import 'order_list.dart';
 import 'product_detail.dart';
 
@@ -117,9 +118,9 @@ class Dashboard extends GetView<DashboardController> {
           SizedBox(height: 2.h),
 
           // Best Deals
-          _buildSectionHeader('Best Deals, Top products',
+          _buildSectionHeader('Best Deals, Top Products',
               () {
-
+                Get.to(() => HomeCategory());
               }),
 
           SizedBox(height: 1.h),
