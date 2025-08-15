@@ -5,82 +5,61 @@ import 'package:sizer/sizer.dart';
 import '../controller/home_category_cnt.dart';
 
 class HomeCategory extends GetView<HomeCategoryController> {
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('Electronic Components'),
+        title: const Text("Products"),
+        centerTitle: true,
       ),
       body: Obx(() {
         if (controller.isLoading.value) {
-          return Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CircularProgressIndicator(),
-                SizedBox(height: 2.h),
-                Text('Loading Components...'),
-              ],
-            ),
-          );
-        } else {
-          return SingleChildScrollView(
-            padding: EdgeInsets.symmetric(vertical: 2.h),
-            child: Column(
-                children: [
-                _buildCategorySection('Diodes And Rectifiers'),
-                _buildCategorySection('Thyristors'),
-                _buildCategorySection('Potentiometer'),
-                _buildCategorySection('Crystal Oscillators'),
-                SizedBox(height: 2.h),
-                TextButton(
-                  onPressed: () {},
-                  child: Text('See More', style: TextStyle(fontSize: 12.sp))),
-                SizedBox(height: 2.h),
-              ],
-            ),
-          );
+          return const Center(child: CircularProgressIndicator());
         }
-      }),
-    );
-  }
 
-  Widget _buildCategorySection(String category) {
-    final items = controller.getComponentsByCategory(category);
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 2.h),
-          child: Text(
-            category,
-            style: TextStyle(
-              fontSize: 16.sp,
-              fontWeight: FontWeight.bold,
-            ),
+        return GridView.builder(
+          padding: EdgeInsets.all(3.w),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 2.h,
+            crossAxisSpacing: 2.w,
+            childAspectRatio: 0.75,
           ),
-        ),
-        ListView.separated(
-          physics: NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          padding: EdgeInsets.symmetric(horizontal: 5.w),
-          itemCount: items.length,
-          separatorBuilder: (_, __) => Divider(height: 1.h),
-          itemBuilder: (ctx, index) {
-            final item = items[index];
-            return ListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(item.name),
-              trailing: Text(
-                '¥ ${item.price.toStringAsFixed(2)} (${item.rating.toStringAsFixed(1)})',
-                style: TextStyle(fontSize: 12.sp),
+          itemCount: controller.products.length,
+          itemBuilder: (context, index) {
+            final product = controller.products[index];
+            return Card(
+              elevation: 3,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2.w)),
+              child: Padding(
+                padding: EdgeInsets.all(2.w),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Image.asset(product.imagePath, fit: BoxFit.contain),
+                    ),
+                    SizedBox(height: 1.h),
+                    Text(product.name,
+                        style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.bold)),
+                    Text("₹ ${product.price.toStringAsFixed(2)}",
+                        style: TextStyle(fontSize: 10.sp, color: Colors.red)),
+                    Row(
+                      children: [
+                        Icon(Icons.star, size: 10.sp, color: Colors.amber),
+                        SizedBox(width: 1.w),
+                        Text(product.rating.toString(), style: TextStyle(fontSize: 9.sp)),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             );
           },
-        ),
-        Divider(thickness: 1, height: 3.h),
-      ],
+        );
+      }),
     );
   }
 }

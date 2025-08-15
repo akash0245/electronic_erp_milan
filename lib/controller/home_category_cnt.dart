@@ -6,37 +6,32 @@ import '../model/product.dart';
 
 class HomeCategoryController extends GetxController {
   var isLoading = true.obs;
-  var components = <Product>[].obs;
-  var categories = ['Diodes', 'Thyristors', 'Potentiometer', 'Crystal Oscillators'].obs;
+  var products = <Product>[].obs;
 
   @override
   void onInit() {
     super.onInit();
-    loadComponents();
+    loadProducts();
   }
 
-  Future<void> loadComponents() async {
-    try {
-      // 3-second delay simulation
-      await Future.delayed(Duration(seconds: 3));
+  Future<void> loadProducts() async {
+    isLoading(true);
+    await Future.delayed(const Duration(seconds: 2)); // Simulate API delay
 
-      final String response = await rootBundle.loadString('assets/components.json');
-      final data = await json.decode(response);
+    List<String> jsonFiles = [
+      'assets/json/panel_indicator_lights.json',
+      'assets/json/diodes_and_rectifiers.json',
+    ];
 
-      components.assignAll(
-        (data['components'] as List)
-            .map((e) => Product.fromJson(e))
-            .toList(),
-      );
+    List<Product> loadedProducts = [];
 
-      isLoading(false);
-    } catch (e) {
-      isLoading(false);
-      Get.snackbar('Error', 'Failed to load components');
+    for (String file in jsonFiles) {
+      String data = await rootBundle.loadString(file);
+      List<dynamic> jsonResult = json.decode(data);
+      loadedProducts.addAll(jsonResult.map((item) => Product.fromJson(item)).toList());
     }
-  }
 
-  List<Product> getComponentsByCategory(String category) {
-    return components.where((c) => c.category == category).toList();
+    products.assignAll(loadedProducts);
+    isLoading(false);
   }
 }

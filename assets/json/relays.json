@@ -1,0 +1,114 @@
+{
+  "category": "Relays",
+  "products":
+      [
+      {
+          "name": "Reed Relays",
+          "price": 168.0,
+          "rating": 2.5,
+          "image": "assets/images/explore_new_arrivals/relays/reed_relays.png",
+          "productDetail": [
+              "Encapsulated in a compact package",
+              "Magnetically operated switch contacts",
+              "Low contact resistance"
+          ],
+          "specs": {
+              "Type": "Reed Relay",
+              "Contact Form": "SPST",
+              "Coil Voltage": "5V DC",
+              "Contact Rating": "0.5A at 200V DC"
+          },
+          "description": "Compact reed relays that provide fast switching and high isolation, suitable for signal and low-power applications."
+      },
+      {
+          "name": "RF Relays",
+          "price": 1667.0,
+          "rating": 4.2,
+          "image": "assets/images/explore_new_arrivals/relays/rf_relays.png",
+          "productDetail": [
+              "Optimized for high-frequency signals",
+              "Low insertion loss",
+              "High isolation between ports"
+          ],
+          "specs": {
+              "Type": "RF Relay",
+              "Frequency Range": "DC to 18 GHz",
+              "Coil Voltage": "12V DC",
+              "Contact Resistance": "50 mΩ"
+          },
+          "description": "High-performance RF relays designed for switching high-frequency signals in test, measurement, and communication systems."
+      },
+      {
+          "name": "Signal Relays",
+          "price": 555.0,
+          "rating": 2.0,
+          "image": "assets/images/explore_new_arrivals/relays/signal_relays.png",
+          "productDetail": [
+              "Designed for low-level signal switching",
+              "Compact and lightweight",
+              "High reliability contacts"
+          ],
+          "specs": {
+              "Type": "Signal Relay",
+              "Contact Form": "DPDT",
+              "Coil Voltage": "5V DC",
+              "Contact Rating": "2A at 30V DC"
+          },
+          "description": "Signal relays provide precise low-level switching for telecommunications, instrumentation, and control circuits."
+      },
+      {
+          "name": "Solid State Relays",
+          "price": 793.0,
+          "rating": 5.0,
+          "image": "assets/images/explore_new_arrivals/relays/solid_state_relays.png",
+          "productDetail": [
+              "No moving parts, silent operation",
+              "Long service life",
+              "Fast switching response"
+          ],
+          "specs": {
+              "Type": "Solid State Relay",
+              "Control Voltage": "3-32V DC",
+              "Load Voltage": "24-480V AC",
+              "Current Rating": "25A"
+          },
+          "description": "Solid state relays ensure silent, fast, and durable switching for industrial automation and control applications."
+      },
+      {
+          "name": "Violet Car Auto Relay",
+          "price": 89.0,
+          "rating": 4.4,
+          "image": "assets/images/explore_new_arrivals/relays/violet_car_auto_relay.png",
+          "productDetail": [
+              "Heavy-duty automotive relay",
+              "Ideal for horn, lights, and motors",
+              "Reliable performance under vibration"
+          ],
+          "specs": {
+              "Type": "Automotive Relay",
+              "Coil Voltage": "12V DC",
+              "Contact Rating": "40A",
+              "Mounting": "Plug-in"
+          },
+          "description": "Durable automotive relay designed for use in cars, providing reliable switching for high-current applications."
+      },
+      {
+          "name": "Reed Switches",
+          "price": 86.0,
+          "rating": 3.3,
+          "image": "assets/images/explore_new_arrivals/relays/reed_switches.png",
+          "productDetail": [
+              "Magnetically activated contacts",
+              "Sealed design for durability",
+              "Low power operation"
+          ],
+          "specs": {
+              "Type": "Reed Switch",
+              "Contact Form": "SPST",
+              "Contact Rating": "0.25A at 200V DC",
+              "Sensing Distance": "10mm"
+          },
+          "description": "Magnetically operated reed switches ideal for position sensing, security systems, and low-current switching."
+      }
+  ]
+}

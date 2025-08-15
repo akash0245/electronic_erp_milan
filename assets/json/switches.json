@@ -1,0 +1,114 @@
+{
+  "category": "Switches",
+  "products":
+      [
+      {
+          "name": "Microswitch Switches",
+          "price": 36.0,
+          "rating": 2.5,
+          "image": "assets/images/explore_new_arrivals/switches/microswitch_switches.png",
+          "productDetail": [
+              "Snap-action switching mechanism",
+              "Durable and reliable contacts",
+              "Compact size for tight spaces"
+          ],
+          "specs": {
+              "Type": "Microswitch",
+              "Current Rating": "3A",
+              "Voltage Rating": "250V AC",
+              "Actuation Force": "100gf"
+          },
+          "description": "Compact microswitches offering precise snap-action performance for various control applications."
+      },
+      {
+          "name": "Detector Switches",
+          "price": 259.0,
+          "rating": 4.2,
+          "image": "assets/images/explore_new_arrivals/switches/detector_switches.png",
+          "productDetail": [
+              "High sensitivity detection",
+              "Rugged build for industrial use",
+              "Quick response time"
+          ],
+          "specs": {
+              "Type": "Detector Switch",
+              "Current Rating": "5A",
+              "Voltage Rating": "125V AC",
+              "Operating Temperature": "-20°C to 70°C"
+          },
+          "description": "Reliable detector switches designed for precise position detection in automation and safety systems."
+      },
+      {
+          "name": "Door Switches",
+          "price": 25.0,
+          "rating": 2.0,
+          "image": "assets/images/explore_new_arrivals/switches/door_switches.png",
+          "productDetail": [
+              "Push-button activation",
+              "Designed for door control systems",
+              "Long mechanical life"
+          ],
+          "specs": {
+              "Type": "Door Switch",
+              "Current Rating": "1A",
+              "Voltage Rating": "250V AC",
+              "Mounting": "Panel"
+          },
+          "description": "Simple and reliable door switches for triggering electrical circuits when doors open or close."
+      },
+      {
+          "name": "Joystick Switches",
+          "price": 584.0,
+          "rating": 5.0,
+          "image": "assets/images/explore_new_arrivals/switches/joystick_switches.png",
+          "productDetail": [
+              "Multi-directional control",
+              "Ergonomic grip design",
+              "Durable mechanical components"
+          ],
+          "specs": {
+              "Type": "Joystick Switch",
+              "Current Rating": "2A",
+              "Voltage Rating": "250V AC",
+              "Number of Directions": "4-way / 8-way"
+          },
+          "description": "Joystick switches for precise multi-directional control in industrial and gaming applications."
+      },
+      {
+          "name": "Magnetic Switches",
+          "price": 192.0,
+          "rating": 4.5,
+          "image": "assets/images/explore_new_arrivals/switches/magnetic_switches.png",
+          "productDetail": [
+              "Magnet-based sensing",
+              "No physical contact required",
+              "Long operational life"
+          ],
+          "specs": {
+              "Type": "Magnetic Switch",
+              "Current Rating": "0.5A",
+              "Voltage Rating": "100V DC",
+              "Sensing Distance": "10mm"
+          },
+          "description": "Magnetic switches ideal for non-contact sensing and triggering in security and automation systems."
+      },
+      {
+          "name": "Reed Switches",
+          "price": 1135.0,
+          "rating": 3.3,
+          "image": "assets/images/explore_new_arrivals/switches/reed_switches.png",
+          "productDetail": [
+              "Sealed glass capsule design",
+              "Activated by magnetic field",
+              "High durability and reliability"
+          ],
+          "specs": {
+              "Type": "Reed Switch",
+              "Current Rating": "0.25A",
+              "Voltage Rating": "200V DC",
+              "Contact Resistance": "150mΩ"
+          },
+          "description": "Sensitive reed switches that respond to magnetic fields, suitable for low-power switching applications."
+      }
+  ]
+}

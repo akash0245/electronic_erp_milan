@@ -1,0 +1,114 @@
+{
+  "category": "Fuses",
+  "products":
+    [
+      {
+          "name": "Industrial Electrical",
+          "price": 38.0,
+          "rating": 2.0,
+          "image": "assets/images/explore_new_arrivals/fuses/industrial_electrical.png",
+          "productDetail": [
+              "High current handling capacity",
+              "Durable metal housing",
+              "Reliable short-circuit protection"
+          ],
+          "specs": {
+              "Type": "Industrial Electrical Fuse",
+              "Current Rating": "100A",
+              "Voltage Rating": "500V AC",
+              "Package": "Bolt Mount"
+          },
+          "description": "Heavy-duty fuse designed for industrial electrical protection with high current capacity."
+      },
+      {
+          "name": "Resettable Fuses",
+          "price": 21.0,
+          "rating": 3.2,
+          "image": "assets/images/explore_new_arrivals/fuses/resettable_fuses.png",
+          "productDetail": [
+              "Polyfuse resettable design",
+              "Protects against overcurrent",
+              "Automatically resets after fault removal"
+          ],
+          "specs": {
+              "Type": "Resettable Fuse",
+              "Current Rating": "0.5A to 2A",
+              "Voltage Rating": "60V DC",
+              "Package": "Radial Lead"
+          },
+          "description": "Resettable polyfuses that protect circuits from overcurrent and can be reused after tripping."
+      },
+      {
+          "name": "Surface Mount Fuses",
+          "price": 52.0,
+          "rating": 3.0,
+          "image": "assets/images/explore_new_arrivals/fuses/surface_mount_fuses.png",
+          "productDetail": [
+              "Compact SMD fuse design",
+              "Fast acting protection",
+              "Ideal for space-limited PCBs"
+          ],
+          "specs": {
+              "Type": "Surface Mount Fuse",
+              "Current Rating": "0.25A to 5A",
+              "Voltage Rating": "125V AC/DC",
+              "Package": "SMD 1206"
+          },
+          "description": "Small form-factor fuses for surface-mount applications with quick blow characteristics."
+      },
+      {
+          "name": "Thermal Fuses",
+          "price": 103.0,
+          "rating": 4.2,
+          "image": "assets/images/explore_new_arrivals/fuses/thermal_fuses.png",
+          "productDetail": [
+              "Temperature-activated fuse",
+              "Protects against overheating",
+              "One-time use device"
+          ],
+          "specs": {
+              "Type": "Thermal Fuse",
+              "Rated Temperature": "130°C",
+              "Current Rating": "10A",
+              "Voltage Rating": "250V AC"
+          },
+          "description": "Thermal fuses that cut off power when a specific temperature is exceeded, preventing fire hazards."
+      },
+      {
+          "name": "Fuse Kits",
+          "price": 603.0,
+          "rating": 4.5,
+          "image": "assets/images/explore_new_arrivals/fuses/fuse_kits.png",
+          "productDetail": [
+              "Assorted fuse types and ratings",
+              "Organized storage box",
+              "Ideal for repair and maintenance"
+          ],
+          "specs": {
+              "Type": "Fuse Assortment Kit",
+              "Contents": "Variety of fuses",
+              "Voltage Rating": "Varies",
+              "Package": "Kit Box"
+          },
+          "description": "Comprehensive fuse kit containing a variety of fuse types for different electrical applications."
+      },
+      {
+          "name": "Waterproof Blade Fuse",
+          "price": 24.0,
+          "rating": 3.3,
+          "image": "assets/images/explore_new_arrivals/fuses/waterproof_blade_fuse.png",
+          "productDetail": [
+              "Waterproof housing",
+              "Blade-style automotive fuse",
+              "Ideal for marine and outdoor use"
+          ],
+          "specs": {
+              "Type": "Waterproof Blade Fuse",
+              "Current Rating": "30A",
+              "Voltage Rating": "32V DC",
+              "Package": "In-line Holder"
+          },
+          "description": "Blade fuse with waterproof holder, suitable for automotive and marine electrical protection."
+      }
+  ]
+}

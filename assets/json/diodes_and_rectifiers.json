@@ -1,0 +1,186 @@
+{
+  "category": "Diodes And Rectifiers",
+  "products": 
+    [
+        {
+            "name": "Diode Array",
+            "price": 105.0,
+            "rating": 3.5,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/diode_array.png",
+            "productDetail": [
+            "Compact multi-diode package",
+            "High-speed switching capability",
+            "Low forward voltage drop"
+            ],
+            "specs": {
+            "Type": "Surface Mount",
+            "Max Reverse Voltage": "50V",
+            "Forward Current": "200mA",
+            "Package": "SMD"
+            },
+            "description": "A versatile diode array suitable for signal routing, protection, and switching applications in compact electronic designs."
+        },
+        {
+            "name": "RF Pin Diodes",
+            "price": 40.0,
+            "rating": 2.5,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/rf_pin_diodes.png",
+            "productDetail": [
+            "Optimized for RF switching",
+            "Low distortion",
+            "High isolation"
+            ],
+            "specs": {
+            "Type": "PIN Diode",
+            "Frequency Range": "10 MHz - 3 GHz",
+            "Forward Resistance": "1Ω",
+            "Package": "SMD"
+            },
+            "description": "PIN diodes designed for RF switching and attenuation, offering low distortion and high isolation for communication circuits."
+        },
+        {
+            "name": "Current Regulator Diode",
+            "price": 14.0,
+            "rating": 2.5,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/current_regulator_diode.png",
+            "productDetail": [
+            "Maintains constant current",
+            "Wide voltage range",
+            "Long lifespan"
+            ],
+            "specs": {
+            "Type": "Current Regulator",
+            "Current Rating": "1mA - 4mA",
+            "Voltage Range": "1V - 100V",
+            "Package": "TO-92"
+            },
+            "description": "Ensures a steady current flow across varying voltages, ideal for LED driving and current control applications."
+        },
+        {
+            "name": "Fast & UF Recovery",
+            "price": 44.0,
+            "rating": 0.0,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/fast_&_uf_recovery.png",
+            "productDetail": [
+            "Ultra-fast reverse recovery",
+            "Low leakage current",
+            "High surge capability"
+            ],
+            "specs": {
+            "Type": "Fast Recovery",
+            "Max Reverse Voltage": "200V",
+            "Recovery Time": "50ns",
+            "Package": "DO-41"
+            },
+            "description": "Fast and ultra-fast recovery diodes for high-frequency rectification and switching circuits."
+        },
+        {
+            "name": "Power Diode",
+            "price": 97.0,
+            "rating": 2.5,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/power_diode.png",
+            "productDetail": [
+            "High current handling",
+            "Low forward drop",
+            "Rugged construction"
+            ],
+            "specs": {
+            "Type": "Power Rectifier",
+            "Max Reverse Voltage": "600V",
+            "Forward Current": "10A",
+            "Package": "DO-201"
+            },
+            "description": "Heavy-duty power diode for rectification in power supplies and industrial electronics."
+        },
+        {
+            "name": "Rectifiers",
+            "price": 35.0,
+            "rating": 0.0,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/rectifiers.png",
+            "productDetail": [
+            "Efficient AC to DC conversion",
+            "High surge tolerance",
+            "Low power loss"
+            ],
+            "specs": {
+            "Type": "Bridge Rectifier",
+            "Max Reverse Voltage": "400V",
+            "Forward Current": "2A",
+            "Package": "DIP-4"
+            },
+            "description": "Reliable bridge rectifier for converting AC to DC with minimal losses."
+        },
+        {
+            "name": "Schottky Diodes",
+            "price": 16.0,
+            "rating": 2.5,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/schottky_diodes.png",
+            "productDetail": [
+            "Low forward voltage",
+            "Fast switching",
+            "Low power loss"
+            ],
+            "specs": {
+            "Type": "Schottky",
+            "Max Reverse Voltage": "45V",
+            "Forward Current": "1A",
+            "Package": "SMD"
+            },
+            "description": "High-speed Schottky diodes for efficient power conversion and signal clamping."
+        },
+        {
+            "name": "Switching Diode",
+            "price": 17.0,
+            "rating": 0.0,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/switching_diode.png",
+            "productDetail": [
+            "High-speed switching",
+            "Low capacitance",
+            "Low leakage"
+            ],
+            "specs": {
+            "Type": "Switching Diode",
+            "Max Reverse Voltage": "100V",
+            "Forward Current": "150mA",
+            "Package": "DO-35"
+            },
+            "description": "Small signal switching diode for high-speed logic circuits and digital switching."
+        },
+        {
+            "name": "Variable Capacitance",
+            "price": 30.0,
+            "rating": 2.5,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/variable_capacitance.png",
+            "productDetail": [
+            "Tunable capacitance",
+            "Low noise",
+            "High stability"
+            ],
+            "specs": {
+            "Type": "Varactor Diode",
+            "Capacitance Range": "2pF - 50pF",
+            "Reverse Voltage": "30V",
+            "Package": "SMD"
+            },
+            "description": "Varactor diode with variable capacitance for RF tuning and frequency control."
+        },
+        {
+            "name": "Zener Diodes",
+            "price": 21.0,
+            "rating": 0.0,
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/zener_diodes.png",
+            "productDetail": [
+            "Stable voltage reference",
+            "Wide voltage range",
+            "Low noise"
+            ],
+            "specs": {
+            "Type": "Zener",
+            "Zener Voltage": "3.3V - 24V",
+            "Power Rating": "500mW",
+            "Package": "DO-35"
+            },
+            "description": "Zener diodes for voltage regulation and reference applications."
+        }
+    ]
+}

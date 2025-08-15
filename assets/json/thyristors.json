@@ -1,0 +1,79 @@
+{
+  "category": "Thyristors",
+  "products":
+  [
+      {
+          "name": "1 bidirectional thyristor",
+          "price": 5.0,
+          "rating": 2.5,
+          "image": "assets/images/explore_new_arrivals/thyristors/1_bidirectional_thyristor.png",
+          "productDetail": [
+              "Bidirectional control capability",
+              "Compact SMD package",
+              "Low gate trigger current"
+          ],
+          "specs": {
+              "Type": "Bidirectional Thyristor",
+              "Max Voltage": "400V",
+              "Gate Trigger Current": "10mA",
+              "Package": "SMD"
+          },
+          "description": "Small bidirectional thyristor ideal for AC switching, motor control, and dimmer circuits."
+      },
+      {
+          "name": "600V 16A Triac",
+          "price": 35.0,
+          "rating": 1.2,
+          "image": "assets/images/explore_new_arrivals/thyristors/600v_16a_triac.png",
+          "productDetail": [
+              "Handles high current loads",
+              "Reliable AC switching",
+              "Robust TO-220 package"
+          ],
+          "specs": {
+              "Type": "Triac",
+              "Max Voltage": "600V",
+              "Max Current": "16A",
+              "Package": "TO-220"
+          },
+          "description": "High power triac suitable for controlling resistive and inductive AC loads such as motors and heaters."
+      },
+      {
+          "name": "Thyristor, TO-220AB",
+          "price": 16.0,
+          "rating": 2.5,
+          "image": "assets/images/explore_new_arrivals/thyristors/thyristor_to-220ab.png",
+          "productDetail": [
+              "Standard thyristor design",
+              "High surge capability",
+              "Easy mounting"
+          ],
+          "specs": {
+              "Type": "Thyristor",
+              "Max Voltage": "800V",
+              "Max Current": "8A",
+              "Package": "TO-220AB"
+          },
+          "description": "Versatile thyristor in TO-220AB package for general AC control applications."
+      },
+      {
+          "name": "Bidirectional, T-23, 3 Pins",
+          "price": 12.0,
+          "rating": 0.0,
+          "image": "assets/images/explore_new_arrivals/thyristors/bidirectional_t-23_3_pins.png",
+          "productDetail": [
+              "Three-pin bidirectional control",
+              "Compact package for space saving",
+              "Low power dissipation"
+          ],
+          "specs": {
+              "Type": "Bidirectional Thyristor",
+              "Max Voltage": "400V",
+              "Max Current": "2A",
+              "Package": "T-23"
+          },
+          "description": "Compact bidirectional thyristor designed for low to medium power AC switching in small electronic devices."
+      }
+  ]
+
+}

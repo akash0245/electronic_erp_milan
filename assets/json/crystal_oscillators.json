@@ -1,0 +1,114 @@
+{
+  "category": "Crystal Oscillators",
+  "products":
+    [
+      {
+          "name": "Crystal Oscillator",
+          "price": 5.0,
+          "rating": 2.5,
+          "image": "assets/images/explore_new_arrivals/crystal_oscillators/crystal_oscillator.png",
+          "productDetail": [
+              "High stability frequency control",
+              "Standard through-hole package",
+              "Low power consumption"
+          ],
+          "specs": {
+              "Type": "Crystal Oscillator",
+              "Frequency": "16 MHz",
+              "Tolerance": "±20 ppm",
+              "Package": "HC-49S"
+          },
+          "description": "Standard crystal oscillator for timing applications in microcontrollers and communication circuits."
+      },
+      {
+          "name": "Crystal Oscillator Package",
+          "price": 35.0,
+          "rating": 1.2,
+          "image": "assets/images/explore_new_arrivals/crystal_oscillators/crystal_oscillator_package.png",
+          "productDetail": [
+              "Metal can package for durability",
+              "Stable oscillation frequency",
+              "Widely used in embedded systems"
+          ],
+          "specs": {
+              "Type": "Crystal Oscillator",
+              "Frequency": "12 MHz",
+              "Tolerance": "±30 ppm",
+              "Package": "Metal Can"
+          },
+          "description": "Durable packaged crystal oscillator suitable for stable frequency generation in electronics."
+      },
+      {
+          "name": "VC-TCXO Oscillators",
+          "price": 419.0,
+          "rating": 3.5,
+          "image": "assets/images/explore_new_arrivals/crystal_oscillators/vc-tcxo_oscillators.png",
+          "productDetail": [
+              "Voltage controlled temperature compensated oscillator",
+              "High frequency stability",
+              "Ideal for telecom and GPS"
+          ],
+          "specs": {
+              "Type": "VC-TCXO Oscillator",
+              "Frequency": "26 MHz",
+              "Stability": "±0.5 ppm",
+              "Package": "SMD"
+          },
+          "description": "High precision VC-TCXO oscillator designed for telecom, navigation, and RF applications."
+      },
+      {
+          "name": "75K SAW Resonator 3Pin",
+          "price": 38.0,
+          "rating": 4.1,
+          "image": "assets/images/explore_new_arrivals/crystal_oscillators/75k_saw_resonator_3pin.png",
+          "productDetail": [
+              "SAW resonator for RF circuits",
+              "3-pin configuration",
+              "High frequency stability"
+          ],
+          "specs": {
+              "Type": "SAW Resonator",
+              "Frequency": "75 kHz",
+              "Tolerance": "±20 ppm",
+              "Package": "Through Hole"
+          },
+          "description": "Three-pin SAW resonator with excellent frequency stability for RF filtering and oscillation."
+      },
+      {
+          "name": "100.000MBB-T Oscillator",
+          "price": 438.0,
+          "rating": 4.5,
+          "image": "assets/images/explore_new_arrivals/crystal_oscillators/100.000mbb-t_oscillator.png",
+          "productDetail": [
+              "High frequency precision oscillator",
+              "SMD package for compact designs",
+              "Excellent long-term stability"
+          ],
+          "specs": {
+              "Type": "Crystal Oscillator",
+              "Frequency": "100 MHz",
+              "Tolerance": "±10 ppm",
+              "Package": "SMD"
+          },
+          "description": "100 MHz high stability crystal oscillator for high-speed communication and test equipment."
+      },
+      {
+          "name": "Ceramic Resonators",
+          "price": 24.0,
+          "rating": 3.3,
+          "image": "assets/images/explore_new_arrivals/crystal_oscillators/ceramic_resonators.png",
+          "productDetail": [
+              "Low-cost frequency control",
+              "Small ceramic package",
+              "Good frequency stability"
+          ],
+          "specs": {
+              "Type": "Ceramic Resonator",
+              "Frequency": "4 MHz",
+              "Tolerance": "±0.5%",
+              "Package": "Through Hole"
+          },
+          "description": "Compact and cost-effective ceramic resonator ideal for microcontroller clock generation."
+      }
+  ]
+}

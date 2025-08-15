@@ -1,0 +1,114 @@
+{
+  "category": "Potentiometer",
+  "products":
+    [
+      {
+          "name": "Slide Potentiometers",
+          "price": 5.0,
+          "rating": 2.5,
+          "image": "assets/images/explore_new_arrivals/potentiometer/slide_potentiometers.png",
+          "productDetail": [
+              "Smooth linear motion",
+              "Durable track for repeated use",
+              "Ideal for audio and mixing consoles"
+          ],
+          "specs": {
+              "Type": "Slide Potentiometer",
+              "Resistance": "10KΩ",
+              "Tolerance": "±20%",
+              "Package": "Through Hole"
+          },
+          "description": "Compact slide potentiometer for precise control in audio mixers, instruments, and user interfaces."
+      },
+      {
+          "name": "Trimmer Potentiometers",
+          "price": 35.0,
+          "rating": 1.2,
+          "image": "assets/images/explore_new_arrivals/potentiometer/trimmer_potentiometers.png",
+          "productDetail": [
+              "Compact size for PCB mounting",
+              "Adjustable resistance",
+              "High reliability in tuning circuits"
+          ],
+          "specs": {
+              "Type": "Trimmer Potentiometer",
+              "Resistance": "1KΩ",
+              "Tolerance": "±10%",
+              "Package": "Through Hole"
+          },
+          "description": "Precision trimmer potentiometer ideal for calibration, tuning, and fine adjustments in circuits."
+      },
+      {
+          "name": "PTV09A-4225F- BOURNS",
+          "price": 77.0,
+          "rating": 2.5,
+          "image": "assets/images/explore_new_arrivals/potentiometer/ptv09a-4225f_bourns.png",
+          "productDetail": [
+              "High quality Bourns potentiometer",
+              "Smooth rotational control",
+              "Long operational life"
+          ],
+          "specs": {
+              "Type": "Rotary Potentiometer",
+              "Resistance": "10KΩ",
+              "Tolerance": "±20%",
+              "Package": "Through Hole"
+          },
+          "description": "Premium Bourns rotary potentiometer for precise control in audio and industrial applications."
+      },
+      {
+          "name": "50K ohm Cermet Preset",
+          "price": 9.0,
+          "rating": 2.1,
+          "image": "assets/images/explore_new_arrivals/potentiometer/50k_ohm_cermet_preset.png",
+          "productDetail": [
+              "High resistance value for precise control",
+              "Cermet material for durability",
+              "Compact preset design"
+          ],
+          "specs": {
+              "Type": "Cermet Preset Potentiometer",
+              "Resistance": "50KΩ",
+              "Tolerance": "±10%",
+              "Package": "Through Hole"
+          },
+          "description": "Durable 50K ohm cermet preset potentiometer designed for accurate adjustments in circuits."
+      },
+      {
+          "name": "PCB Bourns Trimming",
+          "price": 45.0,
+          "rating": 4.5,
+          "image": "assets/images/explore_new_arrivals/potentiometer/pcb_bourns_trimming.png",
+          "productDetail": [
+              "High precision trimming",
+              "Reliable Bourns brand",
+              "Compact PCB mount design"
+          ],
+          "specs": {
+              "Type": "Trimming Potentiometer",
+              "Resistance": "5KΩ",
+              "Tolerance": "±10%",
+              "Package": "Through Hole"
+          },
+          "description": "PCB-mounted Bourns trimming potentiometer for fine-tuning and calibration in electronic devices."
+      },
+      {
+          "name": "1k Sliding Linear",
+          "price": 9.0,
+          "rating": 2.1,
+          "image": "assets/images/explore_new_arrivals/potentiometer/1k_sliding_linear.png",
+          "productDetail": [
+              "1K ohm resistance value",
+              "Smooth sliding operation",
+              "Compact and durable"
+          ],
+          "specs": {
+              "Type": "Slide Potentiometer",
+              "Resistance": "1KΩ",
+              "Tolerance": "±20%",
+              "Package": "Through Hole"
+          },
+          "description": "Small sliding linear potentiometer with 1K ohm resistance for compact control applications."
+      }
+  ]
+}

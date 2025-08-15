@@ -1,0 +1,114 @@
+{
+  "category": "Panel Indicator Lights",
+  "products":
+      [
+      {
+          "name": "Red Metal LED",
+          "price": 5.0,
+          "rating": 4.5,
+          "image": "assets/images/explore_new_arrivals/panel_indicator_lights/red_metal_led.png",
+          "productDetail": [
+              "Bright red illumination for clear visibility",
+              "Durable metal housing",
+              "Suitable for panel mounting"
+          ],
+          "specs": {
+              "Type": "LED Indicator",
+              "Color": "Red",
+              "Voltage": "12V",
+              "Mounting": "Panel"
+          },
+          "description": "A high-quality red metal LED indicator ideal for control panels and industrial applications."
+      },
+      {
+          "name": "Through Hole DIP LEDs",
+          "price": 7.0,
+          "rating": 3.5,
+          "image": "assets/images/explore_new_arrivals/panel_indicator_lights/through_hole_dip_leds.png",
+          "productDetail": [
+              "Classic through-hole design",
+              "Long lifespan and reliability",
+              "Low power consumption"
+          ],
+          "specs": {
+              "Type": "LED",
+              "Color": "Red",
+              "Package": "5mm DIP",
+              "Forward Voltage": "2V"
+          },
+          "description": "Through-hole DIP LEDs providing bright illumination for hobby and professional electronics."
+      },
+      {
+          "name": "RGB LED",
+          "price": 12.0,
+          "rating": 3.5,
+          "image": "assets/images/explore_new_arrivals/panel_indicator_lights/rgb_led.png",
+          "productDetail": [
+              "Supports red, green, and blue colors",
+              "Compact SMD design",
+              "High brightness and efficiency"
+          ],
+          "specs": {
+              "Type": "LED",
+              "Package": "SMD",
+              "Colors": "RGB",
+              "Forward Voltage": "3V"
+          },
+          "description": "Versatile RGB LED for colorful lighting effects in electronics and display projects."
+      },
+      {
+          "name": "Elecrow Crowtail",
+          "price": 181.0,
+          "rating": 5.0,
+          "image": "assets/images/explore_new_arrivals/panel_indicator_lights/elecrow_crowtail.png",
+          "productDetail": [
+              "Easy plug-and-play connection",
+              "Multiple LEDs in a single module",
+              "Ideal for prototyping"
+          ],
+          "specs": {
+              "Type": "LED Module",
+              "Interface": "Crowtail",
+              "LED Count": "4",
+              "Power Supply": "5V"
+          },
+          "description": "A Crowtail LED module designed for quick prototyping and electronic experiments."
+      },
+      {
+          "name": "Plated Bulb Holder : A",
+          "price": 40.0,
+          "rating": 4.0,
+          "image": "assets/images/explore_new_arrivals/panel_indicator_lights/plated_bulb_holder_a.png",
+          "productDetail": [
+              "Chrome-plated finish for durability",
+              "Secure bulb mounting",
+              "Easy installation"
+          ],
+          "specs": {
+              "Type": "Bulb Holder",
+              "Material": "Plated Metal",
+              "Mounting": "Panel",
+              "Bulb Type": "Incandescent or LED"
+          },
+          "description": "Durable plated bulb holder suitable for various lighting and indicator applications."
+      },
+      {
+          "name": "AA Battery Holder Box",
+          "price": 204.0,
+          "rating": 3.1,
+          "image": "assets/images/explore_new_arrivals/panel_indicator_lights/aa_battery_holder_box.png",
+          "productDetail": [
+              "Holds two AA batteries",
+              "Comes with pre-attached wires",
+              "Durable plastic casing"
+          ],
+          "specs": {
+              "Type": "Battery Holder",
+              "Battery Size": "AA",
+              "Capacity": "2 Cells",
+              "Material": "Plastic"
+          },
+          "description": "A sturdy AA battery holder box with leads, perfect for powering small electronic projects."
+      }
+  ]
+}
