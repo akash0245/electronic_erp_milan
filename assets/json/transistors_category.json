@@ -1,5 +1,6 @@
 {
   "category": "Transistors",
+  "categoryImg": "assets/images/categories/component_categories/transistors.png",
   "products": [
     {
       "name": "Bipolar Transistors",

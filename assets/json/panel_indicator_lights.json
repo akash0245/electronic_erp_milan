@@ -1,6 +1,7 @@
 {
   "category": "Panel Indicator Lights",
-  "products":
+    "categoryImg": "assets/images/categories/explore_categories/panel_indicator_lights.png",
+    "products":
       [
       {
           "name": "Red Metal LED",

@@ -262,7 +262,7 @@ class Dashboard extends GetView<DashboardController> {
               Row(
                 children: [
                   Text(
-                    '(${product.rating.toStringAsFixed(2)}',
+                    '(${product.rating.toStringAsFixed(1)}',
                     style: TextStyle(
                       fontSize: 12.sp,
                     ),

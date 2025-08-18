@@ -1,5 +1,6 @@
 {
   "category": "Crystal Oscillators",
+  "categoryImg": "assets/images/categories/explore_categories/crystal_oscillators.png",
   "products":
     [
       {
@@ -78,7 +79,7 @@
           "name": "100.000MBB-T Oscillator",
           "price": 438.0,
           "rating": 4.5,
-          "image": "assets/images/explore_new_arrivals/crystal_oscillators/100.000mbb-t_oscillator.png",
+          "image": "assets/images/explore_new_arrivals/crystal_oscillators/100mbb-t_oscillator.png",
           "productDetail": [
               "High frequency precision oscillator",
               "SMD package for compact designs",

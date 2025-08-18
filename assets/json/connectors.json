@@ -1,8 +1,9 @@
 {
-  "category": "Connectors",
-  "products":
+    "category": "Connectors",
+    "categoryImg": "assets/images/categories/explore_categories/connectors.png",
+    "products":
       [
-      {
+          {
           "name": "Terminal Blocks",
           "price": 2880.0,
           "rating": 4.5,
@@ -20,11 +21,11 @@
           },
           "description": "High-quality terminal blocks designed for industrial applications, offering safe and secure wire connections."
       },
-      {
+          {
           "name": "RF / Coaxial Connectors",
           "price": 205.0,
           "rating": 3.5,
-          "image": "assets/images/explore_new_arrivals/connectors/rf_coaxial_connectors.png",
+          "image": "assets/images/explore_new_arrivals/connectors/rf-coaxial_connectors.png",
           "productDetail": [
               "Low-loss RF signal transmission",
               "Gold-plated contacts for durability",
@@ -38,77 +39,77 @@
           },
           "description": "Reliable RF and coaxial connectors designed for high-frequency applications and superior signal integrity."
       },
-      {
-          "name": "USB & Modular Connect",
-          "price": 20.0,
-          "rating": 3.0,
-          "image": "assets/images/explore_new_arrivals/connectors/usb_modular_connect.png",
-          "productDetail": [
-              "Compatible with USB 2.0 devices",
-              "Durable connector housing",
-              "Easy PCB mounting"
-          ],
-          "specs": {
-              "Type": "USB Connector",
-              "Version": "USB 2.0",
-              "Contact Plating": "Gold",
-              "Mounting": "Through-Hole"
+          {
+              "name": "USB & Modular Connect",
+              "price": 20.0,
+              "rating": 3.0,
+              "image": "assets/images/explore_new_arrivals/connectors/usb_modular_connect.png",
+              "productDetail": [
+                  "Compatible with USB 2.0 devices",
+                  "Durable connector housing",
+                  "Easy PCB mounting"
+              ],
+              "specs": {
+                  "Type": "USB Connector",
+                  "Version": "USB 2.0",
+                  "Contact Plating": "Gold",
+                  "Mounting": "Through-Hole"
+              },
+              "description": "USB and modular connectors for reliable data and power transfer, suitable for electronics and computer peripherals."
           },
-          "description": "USB and modular connectors for reliable data and power transfer, suitable for electronics and computer peripherals."
-      },
-      {
-          "name": "Audio Connectors",
-          "price": 14.0,
-          "rating": 3.1,
-          "image": "assets/images/explore_new_arrivals/connectors/audio_connectors.png",
-          "productDetail": [
-              "Supports stereo and mono audio signals",
-              "Durable plastic housing",
-              "Compact design for tight spaces"
-          ],
-          "specs": {
-              "Type": "Audio Jack",
-              "Configuration": "3.5mm Stereo",
-              "Contact Plating": "Nickel",
-              "Mounting": "PCB"
+          {
+              "name": "Audio Connectors",
+              "price": 14.0,
+              "rating": 3.1,
+              "image": "assets/images/explore_new_arrivals/connectors/audio_connectors.png",
+              "productDetail": [
+                  "Supports stereo and mono audio signals",
+                  "Durable plastic housing",
+                  "Compact design for tight spaces"
+              ],
+              "specs": {
+                  "Type": "Audio Jack",
+                  "Configuration": "3.5mm Stereo",
+                  "Contact Plating": "Nickel",
+                  "Mounting": "PCB"
+              },
+              "description": "High-quality audio connectors for clear sound transmission in consumer electronics and professional audio systems."
           },
-          "description": "High-quality audio connectors for clear sound transmission in consumer electronics and professional audio systems."
-      },
-      {
-          "name": "Circular Connectors BSL",
-          "price": 696.0,
-          "rating": 1.1,
-          "image": "assets/images/explore_new_arrivals/connectors/circular_connectors_bsl.png",
-          "productDetail": [
-              "Rugged design for harsh environments",
-              "Secure screw locking system",
-              "Water and dust resistant"
-          ],
-          "specs": {
-              "Type": "Circular Connector",
-              "Contact Rating": "10A",
-              "IP Rating": "IP67",
-              "Material": "Brass"
+          {
+              "name": "Circular Connectors BSL",
+              "price": 696.0,
+              "rating": 1.1,
+              "image": "assets/images/explore_new_arrivals/connectors/circular_connectors_bsl.png",
+              "productDetail": [
+                  "Rugged design for harsh environments",
+                  "Secure screw locking system",
+                  "Water and dust resistant"
+              ],
+              "specs": {
+                  "Type": "Circular Connector",
+                  "Contact Rating": "10A",
+                  "IP Rating": "IP67",
+                  "Material": "Brass"
+              },
+              "description": "Heavy-duty circular connectors offering reliable connections in industrial and outdoor environments."
           },
-          "description": "Heavy-duty circular connectors offering reliable connections in industrial and outdoor environments."
-      },
-      {
-          "name": "Power Connectors",
-          "price": 660.0,
-          "rating": 3.3,
-          "image": "assets/images/explore_new_arrivals/connectors/power_connectors.png",
-          "productDetail": [
-              "Designed for high-current applications",
-              "Color-coded for easy identification",
-              "Durable and long-lasting"
-          ],
-          "specs": {
-              "Type": "Power Connector",
-              "Current Rating": "30A",
-              "Voltage Rating": "250V",
-              "Material": "Copper Alloy"
-          },
-          "description": "Robust power connectors that provide safe and efficient electrical connections for various power systems."
-      }
+          {
+              "name": "Power Connectors",
+              "price": 660.0,
+              "rating": 3.3,
+              "image": "assets/images/explore_new_arrivals/connectors/power_connectors.png",
+              "productDetail": [
+                  "Designed for high-current applications",
+                  "Color-coded for easy identification",
+                  "Durable and long-lasting"
+              ],
+              "specs": {
+                  "Type": "Power Connector",
+                  "Current Rating": "30A",
+                  "Voltage Rating": "250V",
+                  "Material": "Copper Alloy"
+              },
+              "description": "Robust power connectors that provide safe and efficient electrical connections for various power systems."
+          }
   ]
 }

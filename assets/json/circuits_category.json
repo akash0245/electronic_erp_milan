@@ -1,5 +1,6 @@
 {
   "category": "Circuits",
+  "categoryImg": "assets/images/categories/component_categories/circuits.png",
   "products": [
     {
       "name": "IC Socket",

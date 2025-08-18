@@ -1,5 +1,6 @@
 {
   "category": "Inductors",
+  "categoryImg": "assets/images/categories/component_categories/inductors.png",
   "products": [
     {
       "name": "Air Core Inductors",

@@ -2,6 +2,7 @@ class Product {
   final String name;
   final String category;
   final double price;
+  final double discountPrice;
   final double rating;
   final String imagePath;
   final String description;
@@ -12,6 +13,7 @@ class Product {
     required this.name,
     required this.category,
     required this.price,
+    required this.discountPrice,
     required this.rating,
     required this.imagePath,
     required this.description,
@@ -19,7 +21,7 @@ class Product {
     required this.lstSpecification,
   });
 
-  factory Product.fromJson(Map<String, dynamic> json) {
+  factory Product.fromJson(Map<String, dynamic> json, {String category = 'Electronic'}) {
 
     List<MapEntry<String, dynamic>>? specsList;
 
@@ -32,8 +34,9 @@ class Product {
 
     return Product(
       name: json['name'],
-      category: json['category'] ?? 'Electronic',
+      category: category,
       price: json['price'],
+      discountPrice: json['discountPrice'],
       rating: json['rating'],
       imagePath: json['image'],
       productDetail : json['productDetail'].cast<String>(),
@@ -46,6 +49,7 @@ class Product {
     return {
       'name': name,
       'price': price,
+      'discountPrice': discountPrice,
       'rating': rating,
       'image': imagePath,
       'productDetail': productDetail,

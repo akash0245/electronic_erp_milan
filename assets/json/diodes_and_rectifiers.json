@@ -1,6 +1,7 @@
 {
   "category": "Diodes And Rectifiers",
-  "products": 
+    "categoryImg": "assets/images/categories/explore_categories/diodes_and_rectifiers.png",
+    "products":
     [
         {
             "name": "Diode Array",
@@ -60,7 +61,7 @@
             "name": "Fast & UF Recovery",
             "price": 44.0,
             "rating": 0.0,
-            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/fast_&_uf_recovery.png",
+            "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/fast_and_uf_recovery.png",
             "productDetail": [
             "Ultra-fast reverse recovery",
             "Low leakage current",

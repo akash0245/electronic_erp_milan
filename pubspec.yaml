@@ -66,7 +66,9 @@ flutter:
      - assets/splash_logo.png
      - assets/json/
      - assets/images/dashboard/
-     - assets/images/best_seal_and_top_product/
+     - assets/images/categories/
+     - assets/images/categories/component_categories/
+     - assets/images/categories/explore_categories/
      - assets/images/componets_categories/
      - assets/images/componets_categories/capacitor/
      - assets/images/componets_categories/circuits/
@@ -74,7 +76,15 @@ flutter:
      - assets/images/componets_categories/resistor_option/
      - assets/images/componets_categories/transistor/
      - assets/images/explore_new_arrivals/
-     - assets/images/get_discount/
+     - assets/images/explore_new_arrivals/connectors/
+     - assets/images/explore_new_arrivals/crystal_oscillators/
+     - assets/images/explore_new_arrivals/diodes_and_rectifiers/
+     - assets/images/explore_new_arrivals/fuses/
+     - assets/images/explore_new_arrivals/panel_indicator_lights/
+     - assets/images/explore_new_arrivals/potentiometer/
+     - assets/images/explore_new_arrivals/relays/
+     - assets/images/explore_new_arrivals/switches/
+     - assets/images/explore_new_arrivals/thyristors/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
