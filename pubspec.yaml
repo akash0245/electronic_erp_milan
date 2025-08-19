@@ -73,8 +73,8 @@ flutter:
      - assets/images/componets_categories/capacitor/
      - assets/images/componets_categories/circuits/
      - assets/images/componets_categories/inductors/
-     - assets/images/componets_categories/resistor_option/
-     - assets/images/componets_categories/transistor/
+     - assets/images/componets_categories/resistor_options/
+     - assets/images/componets_categories/transistors/
      - assets/images/explore_new_arrivals/
      - assets/images/explore_new_arrivals/connectors/
      - assets/images/explore_new_arrivals/crystal_oscillators/

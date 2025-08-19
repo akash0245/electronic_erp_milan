@@ -13,7 +13,7 @@ class ProductDetailController extends GetxController {
     super.onInit();
 
     // Simulate 3 seconds loading
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 1), () {
       productDetail = Get.arguments[0] ?? {};
       category = Get.arguments[1] ?? "";
       isDiscount = Get.arguments[2] ?? false;

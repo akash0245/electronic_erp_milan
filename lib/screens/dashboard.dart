@@ -5,6 +5,7 @@ import '../controller/dashboard_cnt.dart';
 import '../model/product.dart';
 import '../utility/widget_helper.dart';
 import 'category_products.dart';
+import 'component_category.dart';
 import 'discount_products.dart';
 import 'home_category.dart';
 import 'order_list.dart';
@@ -91,7 +92,7 @@ class Dashboard extends GetView<DashboardController> {
 
           _buildSectionHeader('Components Categories',
                   () {
-
+                    Get.to(() => ComponentCategory());
               }),
 
           SizedBox(height: 1.h),
@@ -158,7 +159,7 @@ class Dashboard extends GetView<DashboardController> {
             }),
 
           SizedBox(height: 1.h),
-          _buildProductGrid(controller.newArrivals),
+          _buildProductGrid(controller.newArrivals.where((p) => p.rating <= 3.5).take(9).toList().obs),
           SizedBox(height: 2.h),
         ],
       ),

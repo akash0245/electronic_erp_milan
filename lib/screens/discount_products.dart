@@ -30,7 +30,6 @@ class DiscountProduct extends GetView<DashboardController> {
             crossAxisSpacing: 2.w,
             childAspectRatio: 0.8,
           ),
-          physics: NeverScrollableScrollPhysics(),
           itemCount: isDiscount ? controller.discountProduct.length: controller.bestDeals.length,
           itemBuilder: (context, index) {
             final product =

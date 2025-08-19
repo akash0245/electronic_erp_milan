@@ -10,7 +10,7 @@ class DashboardController extends GetxController {
   var products = <Product>[].obs;
   var categoryImages = [
     'assets/images/dashboard/circuits.png',
-    'assets/images/dashboard/resistors.png',
+    'assets/images/dashboard/resistor_options.png',
     'assets/images/dashboard/capacitors.png',
     'assets/images/dashboard/inductors.png',
     'assets/images/dashboard/transistor.png'].obs;

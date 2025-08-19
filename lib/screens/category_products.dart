@@ -22,9 +22,8 @@ class CategoryProduct extends GetView<CategoryProductsController> {
             crossAxisCount: 2,
             mainAxisSpacing: 2.h,
             crossAxisSpacing: 2.w,
-            childAspectRatio: 0.75,
+            childAspectRatio: 0.8,
           ),
-          physics: NeverScrollableScrollPhysics(),
           itemCount: controller.products.length,
           itemBuilder: (context, index) {
             final product =

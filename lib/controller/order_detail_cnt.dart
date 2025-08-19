@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../model/orders.dart';
@@ -89,7 +90,12 @@ class OrderDetailController extends GetxController {
       Orders.setUserList(orderList);
 
       // Process order
-      Get.snackbar('Success', 'Order confirmed!');
+      Get.snackbar(
+          'Success', 'Order confirmed!',
+        snackPosition: SnackPosition.BOTTOM,
+        backgroundColor: Colors.green,
+        colorText: Colors.white
+      );
 
       isProcessing(false);
 

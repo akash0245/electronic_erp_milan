@@ -40,11 +40,11 @@ class CommonWidget {
                   ? Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Text('₹ ${product.discountPrice!.toStringAsFixed(2)}',
-                                      style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.bold),
+                      Text('₹${product.discountPrice!.toStringAsFixed(2)}',
+                                      style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.bold),
                                     ),
-                      SizedBox(width: 1.w),
-                      Text('₹ ${product.price.toStringAsFixed(2)}',
+                      SizedBox(width: 0.5.w),
+                      Text('₹${product.price.toStringAsFixed(2)}',
                         style: TextStyle(
                             fontSize: 11.sp,
                             color: Colors.grey,
@@ -64,7 +64,7 @@ class CommonWidget {
                     '(${product.rating.toStringAsFixed(1)}',
                     style: TextStyle(fontSize: 12.sp),
                   ),
-                  Icon(Icons.star, color: Colors.amber, size: 3.w),
+                  Icon(Icons.star, color: Colors.amber, size: 2.5.w),
                   Text(')', style: TextStyle(fontSize: 12.sp)),
                 ],
               ),
@@ -79,7 +79,7 @@ class CommonWidget {
     return InkWell(
       onTap: onClickCallBack,
       child: Card(
-        elevation: 3,
+        elevation: 1,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2.w)),
         child: Padding(
           padding: EdgeInsets.all(2.w),
