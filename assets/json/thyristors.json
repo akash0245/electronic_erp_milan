@@ -42,6 +42,7 @@
       {
           "name": "Thyristor, TO-220AB",
           "price": 16.0,
+          "discountPrice": 9.0,
           "rating": 2.5,
           "image": "assets/images/explore_new_arrivals/thyristors/thyristor_to-220ab.png",
           "productDetail": [

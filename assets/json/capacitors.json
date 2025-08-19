@@ -24,6 +24,7 @@
     {
       "name": "Aluminium Electrolytic",
       "price": 40.0,
+      "discountPrice": 36.0,
       "rating": 3.2,
       "image": "assets/images/componets_categories/capacitor/aluminium_electrolytic.png",
       "productDetail": [
@@ -119,6 +120,7 @@
     {
       "name": "Polymer Capacitors",
       "price": 60.5,
+      "discountPrice": 55.0,
       "rating": 2.5,
       "image": "assets/images/componets_categories/capacitor/polymer_capacitor.png",
       "productDetail": [

@@ -158,6 +158,7 @@
     {
       "name": "Light Dependent (LDR)",
       "price": 58.0,
+      "discountPrice": 46.0,
       "rating": 5.1,
       "image": "assets/images/componets_categories/resistor_options/light_dependent.png",
       "productDetail": [

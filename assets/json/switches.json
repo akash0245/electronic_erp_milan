@@ -42,6 +42,7 @@
       {
           "name": "Door Switches",
           "price": 25.0,
+          "discountPrice": 20.0,
           "rating": 2.0,
           "image": "assets/images/explore_new_arrivals/switches/door_switches.png",
           "productDetail": [

@@ -1,3 +1,4 @@
+import 'package:Electronic/utility/widget_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -6,15 +7,10 @@ import '../controller/home_category_cnt.dart';
 import 'product_detail.dart';
 
 class HomeCategory extends GetView<HomeCategoryController> {
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Products"),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text("Products"), centerTitle: true),
       body: Obx(() {
         if (controller.isLoading.value) {
           return const Center(child: CircularProgressIndicator());
@@ -23,38 +19,42 @@ class HomeCategory extends GetView<HomeCategoryController> {
         return ListView.builder(
           itemCount: controller.exploreCategory.length,
           physics: AlwaysScrollableScrollPhysics(),
-          itemBuilder: (context, index){
+          itemBuilder: (context, index) {
             return Container(
               decoration: BoxDecoration(
                 border: Border.all(),
-                borderRadius: BorderRadius.circular(1.5.w)
+                borderRadius: BorderRadius.circular(1.5.w),
               ),
               child: Column(
                 children: [
-
                   Row(
                     children: [
-                      Image.asset(controller.exploreCategory[index].categoryImg, fit: BoxFit.cover),
+                      Image.asset(
+                        controller.exploreCategory[index].categoryImg,
+                        fit: BoxFit.cover,
+                      ),
                       SizedBox(width: 2.w),
                       Text(controller.exploreCategory[index].categoryName),
                       Expanded(
-                          child: Container(
-                            padding: EdgeInsets.all(1.0.w),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              gradient: LinearGradient(
-                                  colors: [Color(0xFFA1D56E), Color(0xFF62BD5A)],
-                                  begin: Alignment.centerLeft,
-                                  end: Alignment.centerRight
-                              )
+                        child: Container(
+                          padding: EdgeInsets.all(1.0.w),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            gradient: LinearGradient(
+                              colors: [Color(0xFFA1D56E), Color(0xFF62BD5A)],
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
                             ),
-                            child: Text('See More',
-                              style: TextStyle(
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.bold
-                              ),
+                          ),
+                          child: Text(
+                            'See More',
+                            style: TextStyle(
+                              fontSize: 12.sp,
+                              fontWeight: FontWeight.bold,
                             ),
-                          ))
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                   SizedBox(height: 1.w),
@@ -69,74 +69,16 @@ class HomeCategory extends GetView<HomeCategoryController> {
                     physics: NeverScrollableScrollPhysics(),
                     itemCount: controller.exploreCategory[0].lstProduct.length,
                     itemBuilder: (context, index) {
-                      final product = controller.exploreCategory[0].lstProduct[index];
-                      return InkWell(
-                        onTap: (){
-                          Get.to(() => ProductDetailScreen(), arguments: [product, "Electronic"]);
-                        },
-                        child: Card(
-                          elevation: 3,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2.w)),
-                          child: Padding(
-                            padding: EdgeInsets.all(2.w),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Expanded(
-                                  child: Image.asset(product.imagePath, fit: BoxFit.contain),
-                                ),
-                                SizedBox(height: 1.h),
-                                Container(
-                                  padding: EdgeInsets.fromLTRB(2.w, 1.w, 1.w, 1.w),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(product.name,
-                                        style: TextStyle(
-                                            fontSize: 13.sp,
-                                            fontWeight: FontWeight.bold),
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Text("₹ ${product.price.toStringAsFixed(2)}",
-                                              style: TextStyle(
-                                                  fontSize: 13.sp,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.red)),
-                                          SizedBox(width: 0.8.w),
-                                          Row(
-                                            children: [
-                                              Text(
-                                                '(${product.rating.toStringAsFixed(1)}',
-                                                style: TextStyle(
-                                                  fontSize: 12.sp,
-                                                ),
-                                              ),
-                                              Icon(Icons.star, color: Colors.amber, size: 2.7.w,),
-                                              Text(')', style: TextStyle(fontSize: 12.sp),),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-
-
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
+                      final product =
+                          controller.exploreCategory[0].lstProduct[index];
+                      return CommonWidget.categoryProduct(product, () {
+                        Get.to(
+                          () => ProductDetailScreen(),
+                          arguments: [product, product.category, false],
+                        );
+                      });
                     },
                   ),
-
                 ],
               ),
             );

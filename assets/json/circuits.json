@@ -5,6 +5,7 @@
     {
       "name": "IC Socket",
       "price": 33.0,
+      "discountPrice": 30.0,
       "rating": 3.5,
       "image": "assets/images/componets_categories/circuits/ic_socket.png",
       "productDetail": [
@@ -90,6 +91,7 @@
     {
       "name": "Frequency Management",
       "price": 1447.0,
+      "discountPrice": 1350.0,
       "rating": 4.1,
       "image": "assets/images/componets_categories/circuits/frequency_management.png",
       "productDetail": [

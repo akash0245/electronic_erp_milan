@@ -42,6 +42,7 @@
       {
           "name": "RGB LED",
           "price": 12.0,
+          "discountPrice": 10.0,
           "rating": 3.5,
           "image": "assets/images/explore_new_arrivals/panel_indicator_lights/rgb_led.png",
           "productDetail": [

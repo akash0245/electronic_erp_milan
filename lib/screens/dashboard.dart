@@ -3,6 +3,9 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import '../controller/dashboard_cnt.dart';
 import '../model/product.dart';
+import '../utility/widget_helper.dart';
+import 'category_products.dart';
+import 'discount_products.dart';
 import 'home_category.dart';
 import 'order_list.dart';
 import 'product_detail.dart';
@@ -30,7 +33,6 @@ class Dashboard extends GetView<DashboardController> {
                 borderRadius: BorderRadius.all(Radius.circular(5.w)),
                 onTap: (){
                   Get.to(() => OrderList());
-
                 },
                 child: Image.asset(
                   'assets/images/dashboard/img_bag.png',
@@ -98,10 +100,13 @@ class Dashboard extends GetView<DashboardController> {
             padding: EdgeInsets.symmetric(horizontal: 2.w),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: controller.categoryImages.take(5).map((imagePath) {
+              children: controller.categoryImages.map((imagePath) {
                 return InkWell(
                   onTap: (){
-
+                    String selectedImg = imagePath.split('/').last.split('.').first;
+                    String categoryName = selectedImg[0].toUpperCase() + selectedImg.substring(1);
+                    Get.to(() => CategoryProduct(),
+                        arguments: [categoryName]);
                   },
                   child: SizedBox(
                     width: 15.w,
@@ -120,19 +125,19 @@ class Dashboard extends GetView<DashboardController> {
           // Best Deals
           _buildSectionHeader('Best Deals, Top Products',
               () {
-                Get.to(() => HomeCategory());
+            Get.to(() => DiscountProduct(false));
               }),
 
           SizedBox(height: 1.h),
 
-          _buildProductGrid(controller.bestDeals),
+          _buildProductGrid(controller.bestDeals.take(6).toList().obs),
 
           SizedBox(height: 2.h),
 
           // Discount Banner
           InkWell(
             onTap: (){
-
+              Get.to(() => DiscountProduct(true));
             },
             splashColor: Colors.transparent,
             child: Container(
@@ -149,7 +154,7 @@ class Dashboard extends GetView<DashboardController> {
           // New Arrivals
           _buildSectionHeader('Explore New Arrivals',
             () {
-
+              Get.to(() => HomeCategory());
             }),
 
           SizedBox(height: 1.h),
@@ -210,71 +215,12 @@ class Dashboard extends GetView<DashboardController> {
       itemCount: products.length,
       itemBuilder: (context, index) {
         final product = products[index];
-        return _buildProductItem(product);
+        return CommonWidget.dashboardProduct(product,
+            (){
+              Get.to(() => ProductDetailScreen(), arguments: [product, product.category, false]);
+            }
+        );
       },
-    );
-  }
-
-  Widget _buildProductItem(Product product) {
-    return InkWell(
-      onTap: (){
-        Get.to(() => ProductDetailScreen(), arguments: [product, "Electronic"]);
-      },
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Center(
-                child: Image.asset(
-                  product.imagePath,
-                  width: 80,
-                  height: 80,
-                  fit: BoxFit.contain,
-                ),
-              ),
-            ),
-          ),
-          SizedBox(height: 0.5.h),
-          Text(
-            product.name,
-            style: TextStyle(
-              fontSize: 13.sp,
-            ),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                '₹ ${product.price.toStringAsFixed(2)}',
-                style: TextStyle(
-                  fontSize: 13.sp,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(width: 1.w),
-              Row(
-                children: [
-                  Text(
-                    '(${product.rating.toStringAsFixed(1)}',
-                    style: TextStyle(
-                      fontSize: 12.sp,
-                    ),
-                  ),
-                  Icon(Icons.star, color: Colors.amber, size: 3.w,),
-                  Text(')', style: TextStyle(fontSize: 12.sp),),
-                ],
-              ),
-            ],
-          ),
-        ],
-      ),
     );
   }
 }

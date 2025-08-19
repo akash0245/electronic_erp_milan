@@ -140,7 +140,9 @@ class ProductDetailScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
-                    "₹ ${product.price}",
+                    controller.isDiscount && product.discountPrice != null
+                        ? "₹ ${product.discountPrice}"
+                        : "₹ ${product.price}",
                     style: TextStyle(
                       fontSize: 19.sp,
                       fontWeight: FontWeight.bold,
@@ -149,7 +151,7 @@ class ProductDetailScreen extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: (){
-                      Get.to(() => OrderDetail(), arguments: [product, controller.category]);
+                      Get.to(() => OrderDetail(), arguments: [product, controller.category, controller.isDiscount]);
                     },
                       child: Image.asset('assets/images/dashboard/buy_btn.png',
                       width: 35.w,

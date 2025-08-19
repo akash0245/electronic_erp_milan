@@ -37,7 +37,7 @@ class HomeCategoryController extends GetxController {
     for (String file in jsonFiles) {
       String data = await rootBundle.loadString(file);
       final jsonResult = json.decode(data);
-      loadedProducts.addAll((jsonResult['products'] as List).map((item) => Product.fromJson(item)).toList());
+      loadedProducts.addAll((jsonResult['products'] as List).map((item) => Product.fromJson(item, category: jsonResult['category'])).toList());
 
       loadedProducts.shuffle(Random());
       exploreCategory.add(ExploreCategory(categoryName: jsonResult['category'], categoryImg: jsonResult['categoryImg'], lstProduct: loadedProducts.take(4).toList()));

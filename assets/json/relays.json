@@ -96,6 +96,7 @@
       {
           "name": "Reed Switches",
           "price": 86.0,
+          "discountPrice": 76.0,
           "rating": 3.3,
           "image": "assets/images/explore_new_arrivals/relays/reed_switches.png",
           "productDetail": [

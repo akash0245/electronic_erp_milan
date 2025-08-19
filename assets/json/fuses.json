@@ -60,6 +60,7 @@
       {
           "name": "Thermal Fuses",
           "price": 103.0,
+          "discountPrice": 100.0,
           "rating": 4.2,
           "image": "assets/images/explore_new_arrivals/fuses/thermal_fuses.png",
           "productDetail": [

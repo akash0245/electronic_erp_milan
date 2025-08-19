@@ -6,6 +6,7 @@
         {
             "name": "Diode Array",
             "price": 105.0,
+            "discountPrice": 99.0,
             "rating": 3.5,
             "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/diode_array.png",
             "productDetail": [
@@ -114,6 +115,7 @@
         {
             "name": "Schottky Diodes",
             "price": 16.0,
+            "discountPrice": 12.0,
             "rating": 2.5,
             "image": "assets/images/explore_new_arrivals/diodes_and_rectifiers/schottky_diodes.png",
             "productDetail": [

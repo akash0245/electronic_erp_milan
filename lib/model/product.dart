@@ -2,7 +2,7 @@ class Product {
   final String name;
   final String category;
   final double price;
-  final double discountPrice;
+  double? discountPrice;
   final double rating;
   final String imagePath;
   final String description;
@@ -13,7 +13,7 @@ class Product {
     required this.name,
     required this.category,
     required this.price,
-    required this.discountPrice,
+    this.discountPrice,
     required this.rating,
     required this.imagePath,
     required this.description,

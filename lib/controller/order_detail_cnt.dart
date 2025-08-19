@@ -18,11 +18,13 @@ class OrderDetailController extends GetxController {
 
   late Product productDetail;
   late String category;
+  late bool isDiscount;
 
   @override
   void onInit() {
      productDetail = Get.arguments[0] ?? {};
      category = Get.arguments[1] ?? "";
+     isDiscount = Get.arguments[2] ?? false;
      super.onInit();
   }
 
@@ -79,6 +81,7 @@ class OrderDetailController extends GetxController {
           name: name.value,
           address: address.value,
           email: email.value,
+          isDiscount: isDiscount,
           orderProduct: productDetail);
 
       orderList.add(newOrder);

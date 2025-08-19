@@ -46,7 +46,7 @@ class OrderList extends StatelessWidget {
   Widget _buildOrderItem(Orders order, int index) {
     return InkWell(
       onTap: (){
-        Get.to(() => ProductDetailScreen(), arguments: [order.orderProduct, controller.orderList[index].category]);
+        Get.to(() => ProductDetailScreen(), arguments: [order.orderProduct, controller.orderList[index].category, controller.orderList[index].isDiscount]);
       },
       child: Container(
         decoration: BoxDecoration(
@@ -103,7 +103,9 @@ class OrderList extends StatelessWidget {
 
                     // Price
                     Text(
-                      '₹ ${order.orderProduct!.price.toStringAsFixed(2)}',
+                      order.isDiscount! && order.orderProduct?.discountPrice != null
+                          ? '₹ ${order.orderProduct!.discountPrice!.toStringAsFixed(2)}'
+                          : '₹ ${order.orderProduct!.price.toStringAsFixed(2)}',
                       style: TextStyle(
                         fontSize: 15.sp,
                         fontWeight: FontWeight.bold,

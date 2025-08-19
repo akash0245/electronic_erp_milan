@@ -81,6 +81,7 @@
     {
       "name": "JFET",
       "price": 11.0,
+      "discountPrice": 8.0,
       "rating": 3.2,
       "description": "Junction Field-Effect Transistors with high input impedance.",
       "image": "assets/images/componets_categories/transistors/jfet.png",

@@ -39,6 +39,7 @@
     {
       "name": "Coupled Inductors",
       "price": 35.00,
+      "discountPrice": 30.00,
       "rating": 4.5,
       "image": "assets/images/componets_categories/inductors/coupled_inductors.png",
       "productDetail": [

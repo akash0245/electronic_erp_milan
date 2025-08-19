@@ -60,6 +60,7 @@
       {
           "name": "75K SAW Resonator 3Pin",
           "price": 38.0,
+          "discountPrice": 33.0,
           "rating": 4.1,
           "image": "assets/images/explore_new_arrivals/crystal_oscillators/75k_saw_resonator_3pin.png",
           "productDetail": [

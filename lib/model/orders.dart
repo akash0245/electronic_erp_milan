@@ -9,6 +9,7 @@ class Orders{
   String? name;
   String? address;
   String? email;
+  bool? isDiscount;
   Product? orderProduct;
 
   Orders({
@@ -16,6 +17,7 @@ class Orders{
     required this.name,
     required this.address,
     required this.email,
+    required this.isDiscount,
     required this.orderProduct,
   });
 
@@ -24,6 +26,7 @@ class Orders{
     name = json['name'];
     address = json['address'];
     email = json['email'];
+    isDiscount = json['isDiscount'];
     orderProduct = Product.fromJson(json['orderProduct']);
   }
 
@@ -33,6 +36,7 @@ class Orders{
     data['name'] = name;
     data['address'] = address;
     data['email'] = email;
+    data['isDiscount'] = isDiscount;
     data['orderProduct'] = orderProduct!.toJson();
     return data;
   }
