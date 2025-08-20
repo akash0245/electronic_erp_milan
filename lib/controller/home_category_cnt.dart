@@ -32,9 +32,9 @@ class HomeCategoryController extends GetxController {
       'assets/json/thyristors.json',
     ];
 
-    List<Product> loadedProducts = [];
 
     for (String file in jsonFiles) {
+      List<Product> loadedProducts = [];
       String data = await rootBundle.loadString(file);
       final jsonResult = json.decode(data);
       loadedProducts.addAll((jsonResult['products'] as List).map((item) => Product.fromJson(item, category: jsonResult['category'])).toList());
