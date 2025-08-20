@@ -18,7 +18,7 @@ class HomeCategoryController extends GetxController {
 
   Future<void> loadProducts() async {
     isLoading(true);
-    await Future.delayed(const Duration(seconds: 2)); // Simulate API delay
+    await Future.delayed(const Duration(seconds: 1)); // Simulate API delay
 
     List<String> jsonFiles = [
       'assets/json/connectors.json',
