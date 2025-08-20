@@ -7,6 +7,16 @@ build/
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
 
+# Keystore files
+*.jks
+*.keystore
+keystore.properties
+
+# Build outputs
+/android/app/release/
+/android/app/debug/
+/build/
+
 # Directory created by dartdoc
 # If you don't generate documentation locally you can remove this line.
 doc/api/
