@@ -1,3 +1,4 @@
+import 'package:Electronic/controller/product_detail_cnt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
@@ -46,7 +47,20 @@ class OrderList extends StatelessWidget {
   Widget _buildOrderItem(Orders order, int index) {
     return InkWell(
       onTap: (){
-        Get.to(() => ProductDetailScreen(), arguments: [order.orderProduct, controller.orderList[index].category, controller.orderList[index].isDiscount]);
+
+        final productDetail = Get.find<ProductDetailController>();
+        productDetail.setUpdatedData(order.orderProduct!,
+            controller.orderList[index].category!,
+            controller.orderList[index].isDiscount!,
+            true);
+
+        Get.to(() => ProductDetailScreen(),
+            arguments: [
+              order.orderProduct,
+              controller.orderList[index].category,
+              controller.orderList[index].isDiscount,
+              true]
+        );
       },
       child: Container(
         decoration: BoxDecoration(

@@ -8,15 +8,15 @@ import 'product_detail.dart';
 
 class DiscountProduct extends GetView<DashboardController> {
 
-  final bool isDiscount;
+  final int pageType;
 
-  const DiscountProduct(this.isDiscount, {super.key});
+  const DiscountProduct(this.pageType, {super.key});
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(isDiscount ? 'Discount Product': 'Best Deals'), centerTitle: true),
+      appBar: AppBar(title: Text(pageType == 1 ? 'Discount Product': pageType == 2 ?'Best Deals' : 'All Product'), centerTitle: true),
       body: Obx(() {
         if (controller.isLoading.value) {
           return const Center(child: CircularProgressIndicator());
@@ -30,16 +30,22 @@ class DiscountProduct extends GetView<DashboardController> {
             crossAxisSpacing: 2.w,
             childAspectRatio: 0.8,
           ),
-          itemCount: isDiscount ? controller.discountProduct.length: controller.bestDeals.length,
+          itemCount: pageType == 1
+              ? controller.discountProduct.length
+              : pageType == 2 ? controller.bestDeals.length
+              : controller.newArrivals.length,
           itemBuilder: (context, index) {
             final product =
-            isDiscount ? controller.discountProduct[index] : controller.bestDeals[index];
+            pageType == 1
+                ? controller.discountProduct[index]
+                : pageType == 2 ? controller.bestDeals[index]
+                : controller.newArrivals[index];
             return CommonWidget.dashboardProduct(product, () {
               Get.to(
                     () => ProductDetailScreen(),
-                arguments: [product, product.category, isDiscount],
+                arguments: [product, product.category, pageType == 1, false],
               );
-            },  isDiscount: isDiscount);
+            },  isDiscount: pageType == 1);
           },
         );
       }),

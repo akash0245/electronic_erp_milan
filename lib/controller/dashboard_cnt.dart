@@ -13,7 +13,7 @@ class DashboardController extends GetxController {
     'assets/images/dashboard/resistor_options.png',
     'assets/images/dashboard/capacitors.png',
     'assets/images/dashboard/inductors.png',
-    'assets/images/dashboard/transistor.png'].obs;
+    'assets/images/dashboard/transistors.png'].obs;
   var bestDeals = <Product>[].obs;
   var newArrivals = <Product>[].obs;
   var discountProduct = <Product>[].obs;

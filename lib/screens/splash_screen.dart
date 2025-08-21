@@ -1,7 +1,7 @@
+import 'package:Electronic/screens/intro_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import 'dashboard.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -10,7 +10,7 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // Navigate after 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
-      Get.offAll(() => Dashboard());
+      Get.offAll(() => IntroScreen());
     });
 
     return Scaffold(

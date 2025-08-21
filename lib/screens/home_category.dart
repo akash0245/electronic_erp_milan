@@ -22,8 +22,8 @@ class HomeCategory extends GetView<HomeCategoryController> {
           itemBuilder: (context, index) {
             return Container(
               decoration: BoxDecoration(
-                border: Border.all(),
-                borderRadius: BorderRadius.circular(1.5.w),
+                border: Border.all(color: Colors.grey.shade400),
+                borderRadius: BorderRadius.circular(2.5.w),
               ),
               margin: EdgeInsets.all(2.h),
               padding: EdgeInsets.only(top: 1.w),
@@ -38,12 +38,18 @@ class HomeCategory extends GetView<HomeCategoryController> {
                             children: [
                               Image.asset(
                                 controller.exploreCategory[index].categoryImg,
-                                height: 3.h,
-                                width: 3.w,
+                                height: 4.5.h,
+                                width: 5.5.w,
                                 fit: BoxFit.cover,
                               ),
                               SizedBox(width: 2.w),
-                              Text(controller.exploreCategory[index].categoryName),
+                              Text(controller.exploreCategory[index].categoryName,
+                                style: TextStyle(
+                                    color: Colors.black,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16.sp
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -53,9 +59,9 @@ class HomeCategory extends GetView<HomeCategoryController> {
                             Get.to(()=> CategoryProduct(), arguments: [controller.exploreCategory[index].categoryName]);
                           },
                           child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 2.0.w, vertical: 1.0.w),
+                            padding: EdgeInsets.symmetric(horizontal: 2.5.w, vertical: 1.5.w),
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
+                              borderRadius: BorderRadius.circular(5.w),
                               gradient: LinearGradient(
                                 colors: [Color(0xFFA1D56E), Color(0xFF62BD5A)],
                                 begin: Alignment.centerLeft,
@@ -65,7 +71,7 @@ class HomeCategory extends GetView<HomeCategoryController> {
                             child: Text(
                               'See More',
                               style: TextStyle(
-                                fontSize: 12.sp,
+                                fontSize: 13.sp,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -95,7 +101,7 @@ class HomeCategory extends GetView<HomeCategoryController> {
                           return CommonWidget.categoryProduct(product, () {
                             Get.to(
                               () => ProductDetailScreen(),
-                              arguments: [product, product.category, false],
+                              arguments: [product, product.category, false, false],
                             );
                           });
                         },

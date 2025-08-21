@@ -31,7 +31,7 @@ class CategoryProduct extends GetView<CategoryProductsController> {
             return CommonWidget.categoryProduct(product, () {
               Get.to(
                     () => ProductDetailScreen(),
-                arguments: [product, product.category, false],
+                arguments: [product, product.category, false, false],
               );
             });
           },

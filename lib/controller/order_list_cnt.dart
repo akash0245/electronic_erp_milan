@@ -6,6 +6,7 @@ class OrderListController extends GetxController{
 
   List<Orders> orderList = [];
   RxBool isLoading = true.obs;
+
   @override
   void onInit() {
 

@@ -16,41 +16,39 @@ class Dashboard extends GetView<DashboardController> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: Text('Electronic Components'),
-          titleTextStyle: TextStyle(
-            fontSize: 18.sp,
-            color: Colors.black,
-            fontWeight: FontWeight.w800
-          ),
-          actions: [
-            Padding(
-              padding: EdgeInsets.only(right: 5.w),
-              child: InkWell(
-                borderRadius: BorderRadius.all(Radius.circular(5.w)),
-                onTap: (){
-                  Get.to(() => OrderList());
-                },
-                child: Image.asset(
-                  'assets/images/dashboard/img_bag.png',
-                  height: 8.w,
-                ),
+        title: Text('Electronic Components'),
+        titleTextStyle: TextStyle(
+          fontSize: 18.sp,
+          color: Colors.black,
+          fontWeight: FontWeight.w800
+        ),
+        actions: [
+          Padding(
+            padding: EdgeInsets.only(right: 5.w),
+            child: InkWell(
+              borderRadius: BorderRadius.all(Radius.circular(5.w)),
+              onTap: (){
+                Get.to(() => OrderList());
+              },
+              child: Image.asset(
+                'assets/images/dashboard/img_bag.png',
+                height: 8.w,
               ),
             ),
-          ],
-        ),
-        body: Obx(() {
-          if (controller.isLoading.value) {
-            return _buildLoadingScreen();
-          } else {
-            return _buildMainContent();
-          }
-        }),
+          ),
+        ],
       ),
+      body: Obx(() {
+        if (controller.isLoading.value) {
+          return _buildLoadingScreen();
+        } else {
+          return _buildMainContent();
+        }
+      }),
     );
   }
 
@@ -76,7 +74,7 @@ class Dashboard extends GetView<DashboardController> {
           // Discount Banner
           InkWell(
             onTap: (){
-
+              Get.to(() => DiscountProduct(3));
             },
             splashColor: Colors.transparent,
             child: Container(
@@ -126,7 +124,7 @@ class Dashboard extends GetView<DashboardController> {
           // Best Deals
           _buildSectionHeader('Best Deals, Top Products',
               () {
-            Get.to(() => DiscountProduct(false));
+            Get.to(() => DiscountProduct(2));
               }),
 
           SizedBox(height: 1.h),
@@ -138,7 +136,7 @@ class Dashboard extends GetView<DashboardController> {
           // Discount Banner
           InkWell(
             onTap: (){
-              Get.to(() => DiscountProduct(true));
+              Get.to(() => DiscountProduct(1));
             },
             splashColor: Colors.transparent,
             child: Container(
@@ -218,7 +216,7 @@ class Dashboard extends GetView<DashboardController> {
         final product = products[index];
         return CommonWidget.dashboardProduct(product,
             (){
-              Get.to(() => ProductDetailScreen(), arguments: [product, product.category, false]);
+              Get.to(() => ProductDetailScreen(), arguments: [product, product.category, false, false]);
             }
         );
       },

@@ -70,7 +70,7 @@ class OrderDetailController extends GetxController {
         emailError.value.isEmpty;
   }
 
-  void submitOrder() {
+  Future<void> submitOrder() async {
     isProcessing(true);
     if (validateForm()) {
 
@@ -87,7 +87,7 @@ class OrderDetailController extends GetxController {
 
       orderList.add(newOrder);
 
-      Orders.setUserList(orderList);
+      await Orders.setUserList(orderList);
 
       // Process order
       Get.snackbar(

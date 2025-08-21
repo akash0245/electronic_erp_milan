@@ -46,7 +46,7 @@ class ProductDetailScreen extends StatelessWidget {
 
                     Text(
                       product.name ?? '',
-                      style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
+                      style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
                     ),
 
                     SizedBox(height: 1.h),
@@ -144,19 +144,21 @@ class ProductDetailScreen extends StatelessWidget {
                         ? "₹ ${product.discountPrice}"
                         : "₹ ${product.price}",
                     style: TextStyle(
-                      fontSize: 19.sp,
+                      fontSize: 22.sp,
                       fontWeight: FontWeight.bold,
                       color: Colors.red,
                     ),
                   ),
-                  InkWell(
-                    onTap: (){
-                      Get.to(() => OrderDetail(), arguments: [product, controller.category, controller.isDiscount]);
-                    },
+                  controller.isFromOrder
+                      ? SizedBox(height: 8.h,)
+                      : InkWell(
+                      onTap: (){
+                        Get.to(() => OrderDetail(), arguments: [product, controller.category, controller.isDiscount]);
+                      },
                       child: Image.asset('assets/images/dashboard/buy_btn.png',
-                      width: 35.w,
+                        width: 35.w,
                         height: 8.h,
-                    )
+                      )
                   ),
                 ],
               ),
