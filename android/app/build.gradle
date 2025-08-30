@@ -13,7 +13,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.electric.components.milan_savaliya"
+    namespace "com.jt.eletrical.tool"
     compileSdkVersion 35
     ndkVersion "27.2.12479018"
 

@@ -8,7 +8,6 @@ build/
 pubspec.lock
 
 # Keystore files
-*.jks
 *.keystore
 keystore.properties
 

@@ -1,4 +1,4 @@
-package com.electric.components.milan_savaliya
+package com.jt.eletrical.tool
 
 import io.flutter.embedding.android.FlutterActivity
 
