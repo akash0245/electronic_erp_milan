@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../controller/order_detail_cnt.dart';
 import 'dashboard.dart';
@@ -60,38 +61,76 @@ class IntroScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 30.h),
-          InkWell(
-            onTap: (){
-              Get.offAll(() => Dashboard());
-            },
-            child: Padding(
-              padding: EdgeInsets.all(12.0),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: 50,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  gradient: LinearGradient(
-                      colors: [Color(0xFFA1D56E), Color(0xFF62BD5A)],
-                      begin: Alignment.centerLeft,
-                    end: Alignment.centerRight
-                  )
-                ),
-                child: Center(
-                  child: Text(
-                    'Let\'s Start',
-                    style: TextStyle(
-                        fontSize: 17.sp,
-                      fontWeight: FontWeight.bold
+          SizedBox(height: 26.h),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              InkWell(
+                onTap: (){
+                  Get.offAll(() => Dashboard());
+                },
+                child: Padding(
+                  padding: EdgeInsets.all(12.0),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      gradient: LinearGradient(
+                          colors: [Color(0xFFA1D56E), Color(0xFF62BD5A)],
+                          begin: Alignment.centerLeft,
+                        end: Alignment.centerRight
+                      )
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Let\'s Start',
+                        style: TextStyle(
+                            fontSize: 17.sp,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
+
+              SizedBox(height: 1.h),
+
+              Text(
+    'By Continuing you agree to our ',
+    style: TextStyle(
+    fontSize: 15.sp,
+    color: Colors.black,
+    ),
+    ),
+
+              GestureDetector(
+                onTap: _launchPrivacyPolicy,
+                child: Text(
+                  'Privacy Policy',
+                  style: TextStyle(
+                    fontSize: 15.sp,
+                    color: Colors.green,
+                    decoration: TextDecoration.underline
+                  ),
+                ),
+              ),
+
+              SizedBox(height: 1.5.h),
+
+
+            ],
           ),
         ],
       ),
     );
+  }
+
+  Future<void> _launchPrivacyPolicy() async {
+    final Uri url = Uri.parse('http://jtmachine.in/privacy-policy-2/');
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
   }
 }
